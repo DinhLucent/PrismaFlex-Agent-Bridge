@@ -1,0 +1,206 @@
+2026-09-14 18:49:38,503 [INFO] PrismaFlexBackend: Loaded Reference DB from: C:\PrismaFlex\releases\1.2.0\resources\reference\prismaflex_reference.db
+2026-09-14 18:49:38,701 [INFO] PrismaFlexBackend: TrendDatabase initialized: C:\PrismaFlex\shared\var\trends.db
+INFO:     Started server process [12252]
+INFO:     Waiting for application startup.
+2026-09-14 18:49:38,972 [INFO] PrismaFlex.DB: PostgreSQL engine created: 127.0.0.1:5432/prismaflex_app
+2026-09-14 18:49:38,973 [INFO] PrismaFlexBackend: PostgresTreatmentDB initialized (SQLAlchemy -> PostgreSQL)
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-09-14 18:53:19,432 [INFO] alembic.runtime.migration: Context impl PostgresqlImpl.
+2026-09-14 18:53:19,432 [INFO] alembic.runtime.migration: Will assume transactional DDL.
+INFO:     127.0.0.1:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+2026-09-14 18:56:41,044 [INFO] PrismaFlexBackend: New Client Connected (user_id=b384ca20-00be-45dd-a92e-815a40db28a2). Total: 1
+2026-09-14 18:56:49,489 [INFO] httpx: HTTP Request: GET http://127.0.0.1:15555/health "HTTP/1.1 200 OK"
+2026-09-14 18:57:18,764 [INFO] httpx: HTTP Request: GET http://127.0.0.1:15555/health "HTTP/1.1 200 OK"
+2026-09-14 18:57:40,322 [INFO] PrismaFlexBackend: Searching clinical reference for: '' (cat: all)
+2026-09-14 18:57:40,324 [INFO] PrismaFlexBackend: Search complete. Total results: 368
+2026-09-14 18:57:41,435 [INFO] httpx: HTTP Request: GET http://127.0.0.1:15555/internal/v1/ui "HTTP/1.1 200 OK"
+2026-09-14 18:57:41,998 [INFO] httpx: HTTP Request: GET http://127.0.0.1:15555/internal/v1/ui-assets/chart.umd.min.js "HTTP/1.1 200 OK"
+2026-09-14 18:57:42,007 [INFO] httpx: HTTP Request: GET http://127.0.0.1:15555/internal/v1/ui-assets/chartjs-plugin-zoom.min.js "HTTP/1.1 200 OK"
+2026-09-15 00:09:51,773 [INFO] PrismaFlexPerformance: PF_006,65.43,0.03,0.00,QUEUE_MODE
+2026-09-15 00:09:51,774 [INFO] PrismaFlexBackend: Processed PF_006: PF_006,65.43,0.03,0.00,QUEUE_MODE
+2026-09-15 00:09:51,910 [INFO] PrismaFlexPerformance: PF_010,73.96,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:51,911 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,73.96,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:51,915 [INFO] PrismaFlexPerformance: PF_006,75.28,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:51,916 [INFO] PrismaFlexBackend: Processed PF_006: PF_006,75.28,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:51,967 [INFO] PrismaFlexPerformance: PF_010,49.39,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:51,968 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,49.39,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,015 [INFO] PrismaFlexPerformance: PF_010,42.62,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,016 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,42.62,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,061 [INFO] PrismaFlexPerformance: PF_010,37.38,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,061 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,37.38,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,107 [INFO] PrismaFlexPerformance: PF_010,40.00,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,108 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,40.00,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,154 [INFO] PrismaFlexPerformance: PF_010,41.60,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,154 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,41.60,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,189 [INFO] PrismaFlexPerformance: PF_010,30.28,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,189 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,30.28,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,229 [INFO] PrismaFlexPerformance: PF_010,36.19,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,230 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,36.19,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,275 [INFO] PrismaFlexPerformance: PF_010,39.97,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,275 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,39.97,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,331 [INFO] PrismaFlexPerformance: PF_010,50.45,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,332 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,50.45,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,377 [INFO] PrismaFlexPerformance: PF_010,39.78,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,377 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,39.78,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,415 [INFO] PrismaFlexPerformance: PF_010,33.04,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,416 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,33.04,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,464 [INFO] PrismaFlexPerformance: PF_010,44.25,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,464 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,44.25,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,506 [INFO] PrismaFlexPerformance: PF_010,38.30,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,507 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,38.30,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,543 [INFO] PrismaFlexPerformance: PF_010,32.17,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:52,544 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,32.17,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:52,580 [INFO] PrismaFlexPerformance: PF_010,32.42,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,580 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,32.42,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,647 [INFO] PrismaFlexPerformance: PF_010,63.36,2.45,0.00,QUEUE_MODE
+2026-09-15 00:09:52,648 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,63.36,2.45,0.00,QUEUE_MODE
+2026-09-15 00:09:52,697 [INFO] PrismaFlexPerformance: PF_010,42.48,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,697 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,42.48,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,745 [INFO] PrismaFlexPerformance: PF_010,41.27,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,745 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,41.27,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,794 [INFO] PrismaFlexPerformance: PF_010,40.24,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,795 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,40.24,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,841 [INFO] PrismaFlexPerformance: PF_010,37.88,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,842 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,37.88,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,896 [INFO] PrismaFlexPerformance: PF_010,37.67,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,896 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,37.67,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,993 [INFO] PrismaFlexPerformance: PF_010,90.93,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:52,994 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,90.93,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,062 [INFO] PrismaFlexPerformance: PF_010,59.66,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,062 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,59.66,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,136 [INFO] PrismaFlexPerformance: PF_010,62.83,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,137 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,62.83,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,191 [INFO] PrismaFlexPerformance: PF_010,48.61,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,193 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,48.61,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,286 [INFO] PrismaFlexPerformance: PF_010,87.79,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,286 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,87.79,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,332 [INFO] PrismaFlexPerformance: PF_010,40.38,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,333 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,40.38,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,380 [INFO] PrismaFlexPerformance: PF_010,42.09,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,381 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,42.09,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,428 [INFO] PrismaFlexPerformance: PF_010,41.97,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,428 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,41.97,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,484 [INFO] PrismaFlexPerformance: PF_010,50.07,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:53,484 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,50.07,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:53,533 [INFO] PrismaFlexPerformance: PF_010,42.14,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,533 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,42.14,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,589 [INFO] PrismaFlexPerformance: PF_010,49.89,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,590 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,49.89,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,636 [INFO] PrismaFlexPerformance: PF_010,38.26,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:53,636 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,38.26,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:53,701 [INFO] PrismaFlexPerformance: PF_010,59.84,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,701 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,59.84,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,752 [INFO] PrismaFlexPerformance: PF_010,45.06,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:53,753 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,45.06,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:53,787 [INFO] PrismaFlexPerformance: PF_010,28.81,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,787 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,28.81,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,824 [INFO] PrismaFlexPerformance: PF_010,32.06,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:53,824 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,32.06,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:53,872 [INFO] PrismaFlexPerformance: PF_010,42.15,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,872 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,42.15,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,938 [INFO] PrismaFlexPerformance: PF_010,60.70,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,938 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,60.70,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:53,992 [INFO] PrismaFlexPerformance: PF_010,45.88,0.02,0.00,QUEUE_MODE
+2026-09-15 00:09:53,992 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,45.88,0.02,0.00,QUEUE_MODE
+2026-09-15 00:09:54,048 [INFO] PrismaFlexPerformance: PF_010,49.68,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,048 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,49.68,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,084 [INFO] PrismaFlexPerformance: PF_010,30.73,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,084 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,30.73,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,130 [INFO] PrismaFlexPerformance: PF_010,42.24,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,131 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,42.24,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,179 [INFO] PrismaFlexPerformance: PF_010,43.21,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:54,179 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,43.21,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:54,225 [INFO] PrismaFlexPerformance: PF_010,41.33,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:54,226 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,41.33,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:54,273 [INFO] PrismaFlexPerformance: PF_010,41.08,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:54,274 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,41.08,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:54,440 [INFO] PrismaFlexPerformance: PF_010,159.18,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:54,440 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,159.18,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:54,498 [INFO] PrismaFlexPerformance: PF_010,52.01,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:54,499 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,52.01,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:54,556 [INFO] PrismaFlexPerformance: PF_010,52.12,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,556 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,52.12,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,602 [INFO] PrismaFlexPerformance: PF_010,40.42,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,603 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,40.42,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,648 [INFO] PrismaFlexPerformance: PF_010,40.08,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,650 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,40.08,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,695 [INFO] PrismaFlexPerformance: PF_010,38.78,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,697 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,38.78,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,773 [INFO] PrismaFlexPerformance: PF_010,70.20,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:54,774 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,70.20,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:54,838 [INFO] PrismaFlexPerformance: PF_010,39.37,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,838 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,39.37,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,895 [INFO] PrismaFlexPerformance: PF_010,51.66,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,895 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,51.66,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,941 [INFO] PrismaFlexPerformance: PF_010,40.37,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,941 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,40.37,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,978 [INFO] PrismaFlexPerformance: PF_010,31.96,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:54,978 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,31.96,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:55,026 [INFO] PrismaFlexPerformance: PF_010,40.07,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:55,026 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,40.07,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:55,083 [INFO] PrismaFlexPerformance: PF_010,49.33,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:55,083 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,49.33,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:55,142 [INFO] PrismaFlexPerformance: PF_010,50.25,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:55,142 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,50.25,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:55,190 [INFO] PrismaFlexPerformance: PF_010,42.03,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:55,190 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,42.03,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:55,246 [INFO] PrismaFlexPerformance: PF_010,49.14,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:55,246 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,49.14,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:55,293 [INFO] PrismaFlexPerformance: PF_010,43.00,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:55,293 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,43.00,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:55,350 [INFO] PrismaFlexPerformance: PF_010,51.59,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:55,351 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,51.59,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:55,410 [INFO] PrismaFlexPerformance: PF_010,50.97,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:55,411 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,50.97,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:55,470 [INFO] PrismaFlexPerformance: PF_010,54.51,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:55,471 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,54.51,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:55,523 [INFO] PrismaFlexPerformance: PF_010,50.43,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:55,524 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,50.43,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:55,560 [INFO] PrismaFlexPerformance: PF_010,31.74,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:55,560 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,31.74,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:55,629 [INFO] PrismaFlexPerformance: PF_010,61.02,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:55,630 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,61.02,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:55,676 [INFO] PrismaFlexPerformance: PF_010,41.80,0.02,0.00,QUEUE_MODE
+2026-09-15 00:09:55,676 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,41.80,0.02,0.00,QUEUE_MODE
+2026-09-15 00:09:55,734 [INFO] PrismaFlexPerformance: PF_010,52.63,0.05,0.00,QUEUE_MODE
+2026-09-15 00:09:55,735 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,52.63,0.05,0.00,QUEUE_MODE
+2026-09-15 00:09:55,782 [INFO] PrismaFlexPerformance: PF_010,41.21,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:55,782 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,41.21,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:55,841 [INFO] PrismaFlexPerformance: PF_010,54.25,0.05,0.00,QUEUE_MODE
+2026-09-15 00:09:55,841 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,54.25,0.05,0.00,QUEUE_MODE
+2026-09-15 00:09:55,912 [INFO] PrismaFlexPerformance: PF_010,45.67,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:55,912 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,45.67,0.00,0.00,QUEUE_MODE
+2026-09-15 00:09:55,969 [INFO] PrismaFlexPerformance: PF_010,45.50,0.04,0.00,QUEUE_MODE
+2026-09-15 00:09:55,969 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,45.50,0.04,0.00,QUEUE_MODE
+2026-09-15 00:09:56,016 [INFO] PrismaFlexPerformance: PF_010,42.54,0.03,0.00,QUEUE_MODE
+2026-09-15 00:09:56,017 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,42.54,0.03,0.00,QUEUE_MODE
+2026-09-15 00:09:56,062 [INFO] PrismaFlexPerformance: PF_010,41.52,0.06,0.00,QUEUE_MODE
+2026-09-15 00:09:56,063 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,41.52,0.06,0.00,QUEUE_MODE
+2026-09-15 00:09:56,120 [INFO] PrismaFlexPerformance: PF_010,52.27,0.03,0.00,QUEUE_MODE
+2026-09-15 00:09:56,121 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,52.27,0.03,0.00,QUEUE_MODE
+2026-09-15 00:09:56,166 [INFO] PrismaFlexPerformance: PF_010,40.69,0.01,0.00,QUEUE_MODE
+2026-09-15 00:09:56,166 [INFO] PrismaFlexBackend: Processed PF_010: PF_010,40.69,0.01,0.00,QUEUE_MODE
+2026-09-15 00:10:00,683 [INFO] PrismaFlexBackend: Client Disconnected. Total: 0
+INFO:     127.0.0.1:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+2026-09-15 00:10:00,821 [INFO] PrismaFlexBackend: New Client Connected (user_id=b384ca20-00be-45dd-a92e-815a40db28a2). Total: 1
+2026-09-15 00:10:01,666 [INFO] PrismaFlexBackend: Client Disconnected. Total: 0
+INFO:     127.0.0.1:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+2026-09-15 00:10:01,735 [INFO] PrismaFlexBackend: New Client Connected (user_id=b384ca20-00be-45dd-a92e-815a40db28a2). Total: 1
+2026-09-15 00:10:02,440 [INFO] PrismaFlexBackend: Client Disconnected. Total: 0
+INFO:     127.0.0.1:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+2026-09-15 00:10:02,508 [INFO] PrismaFlexBackend: New Client Connected (user_id=b384ca20-00be-45dd-a92e-815a40db28a2). Total: 1
+2026-09-15 00:10:03,069 [INFO] PrismaFlexBackend: Client Disconnected. Total: 0
+INFO:     127.0.0.1:0 - "WebSocket /ws" [accepted]
+INFO:     connection open
+2026-09-15 00:10:03,142 [INFO] PrismaFlexBackend: New Client Connected (user_id=b384ca20-00be-45dd-a92e-815a40db28a2). Total: 1
+2026-09-15 02:09:47,010 [INFO] PrismaFlexBackend: Client Disconnected. Total: 0
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-09-15 02:09:48,152 [INFO] PrismaFlexBackend: TrendDatabase connection closed.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12252]

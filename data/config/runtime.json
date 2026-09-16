@@ -1,0 +1,17 @@
+{
+  "ANALYZER_PORT": 15555,
+  "AUTH_COOKIE_SAMESITE": "lax",
+  "AUTH_COOKIE_SECURE": false,
+  "CORS_ORIGINS": [
+    "http://192.168.5.248:3000"
+  ],
+  "ENABLE_TREATMENT_ANALYZER": true,
+  "HOST": "127.0.0.1",
+  "NETWORK_SCHEMA": 2,
+  "PORT": 8000,
+  "POSTGRES_URL": "postgresql+psycopg2://prismaflex:prismaflex@127.0.0.1:5432/prismaflex_app",
+  "PUBLIC_HOST": "192.168.5.248",
+  "SITE_PROFILE_HASH": "a99414a91f73a66134caf4a38f800d5a08b0b1235ade0f3d2530d582eea28967",
+  "TREATMENT_ANALYZER_SERVICE_KEY": "+ZdtZfaZZQAMC+A6Wo/WcNRQS3pEHpPe5Ts8RevbSlE=",
+  "WEB_PORT": 3000
+}

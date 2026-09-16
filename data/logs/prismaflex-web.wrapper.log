@@ -1,0 +1,62 @@
+2026-09-10 23:25:15,022 DEBUG - Starting WinSW in console mode
+2026-09-10 23:25:15,056 INFO  - Installing service 'PrismaFlex web (prismaflex-web)'...
+2026-09-10 23:25:15,129 INFO  - Service 'PrismaFlex web (prismaflex-web)' was installed successfully.
+2026-09-10 23:25:39,084 DEBUG - Starting WinSW in service mode
+2026-09-10 23:25:39,358 INFO  - Starting C:\PrismaFlex\releases\1.2.0\api\prismaflex.exe --install-root "C:\PrismaFlex" serve-web
+2026-09-10 23:25:39,590 INFO  - Started process 28344
+2026-09-10 23:25:39,668 DEBUG - Forwarding logs of the process System.Diagnostics.Process (prismaflex) to WinSW.RollingLogAppender
+2026-09-10 23:26:38,260 INFO  - Stopping prismaflex-web
+2026-09-10 23:26:38,261 DEBUG - ProcessKill 28344
+2026-09-10 23:26:38,276 DEBUG - Stopping process 28344...
+2026-09-10 23:26:38,414 DEBUG - Process 28344 canceled with code 1.
+2026-09-10 23:26:38,419 INFO  - Finished prismaflex-web
+2026-09-10 23:26:45,319 DEBUG - Starting WinSW in service mode
+2026-09-10 23:26:45,586 INFO  - Starting C:\PrismaFlex\releases\1.2.0\api\prismaflex.exe --install-root "C:\PrismaFlex" serve-web
+2026-09-10 23:26:45,630 INFO  - Started process 38640
+2026-09-10 23:26:45,648 DEBUG - Forwarding logs of the process System.Diagnostics.Process (prismaflex) to WinSW.RollingLogAppender
+2026-09-10 23:28:32,450 INFO  - Stopping prismaflex-web
+2026-09-10 23:28:32,450 DEBUG - ProcessKill 38640
+2026-09-10 23:28:32,460 DEBUG - Stopping process 38640...
+2026-09-10 23:28:32,585 DEBUG - Process 38640 canceled with code 1.
+2026-09-10 23:28:32,589 INFO  - Finished prismaflex-web
+2026-09-10 23:28:37,388 DEBUG - Starting WinSW in service mode
+2026-09-10 23:28:37,670 INFO  - Starting C:\PrismaFlex\releases\1.2.0\api\prismaflex.exe --install-root "C:\PrismaFlex" serve-web
+2026-09-10 23:28:37,711 INFO  - Started process 38168
+2026-09-10 23:28:37,732 DEBUG - Forwarding logs of the process System.Diagnostics.Process (prismaflex) to WinSW.RollingLogAppender
+2026-09-11 00:43:27,955 INFO  - Stopping prismaflex-web
+2026-09-11 00:43:27,957 DEBUG - ProcessKill 38168
+2026-09-11 00:43:27,970 DEBUG - Stopping process 38168...
+2026-09-11 00:44:00,181 DEBUG - Process 38168 canceled with code 1.
+2026-09-11 00:44:00,185 INFO  - Finished prismaflex-web
+2026-09-11 00:44:52,048 DEBUG - Starting WinSW in service mode
+2026-09-11 00:44:52,336 INFO  - Starting C:\PrismaFlex\releases\1.2.0\api\prismaflex.exe --install-root "C:\PrismaFlex" serve-web
+2026-09-11 00:44:52,387 INFO  - Started process 128312
+2026-09-11 00:44:52,408 DEBUG - Forwarding logs of the process System.Diagnostics.Process (prismaflex) to WinSW.RollingLogAppender
+2026-09-11 15:49:07,446 DEBUG - Starting WinSW in service mode
+2026-09-11 15:49:07,635 INFO  - Starting C:\PrismaFlex\releases\1.2.0\api\prismaflex.exe --install-root "C:\PrismaFlex" serve-web
+2026-09-11 15:49:18,309 INFO  - Started process 6224
+2026-09-11 15:49:18,322 DEBUG - Forwarding logs of the process System.Diagnostics.Process (prismaflex) to WinSW.RollingLogAppender
+2026-09-11 15:57:34,361 DEBUG - Starting WinSW in service mode
+2026-09-11 15:57:34,540 INFO  - Starting C:\PrismaFlex\releases\1.2.0\api\prismaflex.exe --install-root "C:\PrismaFlex" serve-web
+2026-09-11 15:57:44,942 INFO  - Started process 7964
+2026-09-11 15:57:44,955 DEBUG - Forwarding logs of the process System.Diagnostics.Process (prismaflex) to WinSW.RollingLogAppender
+2026-09-11 15:59:00,766 DEBUG - Starting WinSW in service mode
+2026-09-11 15:59:00,974 INFO  - Starting C:\PrismaFlex\releases\1.2.0\api\prismaflex.exe --install-root "C:\PrismaFlex" serve-web
+2026-09-11 15:59:01,007 INFO  - Started process 5996
+2026-09-11 15:59:01,021 DEBUG - Forwarding logs of the process System.Diagnostics.Process (prismaflex) to WinSW.RollingLogAppender
+2026-09-15 02:08:46,869 INFO  - Stopping prismaflex-web
+2026-09-15 02:08:46,870 DEBUG - ProcessKill 5996
+2026-09-15 02:08:46,882 DEBUG - Stopping process 5996...
+2026-09-15 02:09:46,891 DEBUG - Process 5996 terminated.
+2026-09-15 02:09:46,996 DEBUG - Found child process 6444.
+2026-09-15 02:09:46,997 DEBUG - Found child process 1676.
+2026-09-15 02:09:46,998 DEBUG - Stopping process 6444...
+2026-09-15 02:09:47,001 DEBUG - Process 6444 terminated.
+2026-09-15 02:09:47,005 DEBUG - Stopping process 1676...
+2026-09-15 02:09:47,006 WARN  - Failed to attach to console. No process is on the other end of the pipe.
+2026-09-15 02:09:47,007 DEBUG - Process 1676 terminated.
+2026-09-15 02:09:47,013 INFO  - Finished prismaflex-web
+2026-09-15 02:09:59,732 DEBUG - Starting WinSW in service mode
+2026-09-15 02:09:59,931 INFO  - Starting C:\PrismaFlex\releases\1.2.1\api\prismaflex.exe --install-root "C:\PrismaFlex" serve-web
+2026-09-15 02:09:59,964 INFO  - Started process 2228
+2026-09-15 02:09:59,980 DEBUG - Forwarding logs of the process System.Diagnostics.Process (prismaflex) to WinSW.RollingLogAppender

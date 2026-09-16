@@ -1,0 +1,202 @@
+[
+  {
+    "device_id": "PF_010",
+    "alarm_id": 199,
+    "title": "Bag Full (Effluent)",
+    "severity": "CAUTION",
+    "start_time": "2026-09-15T14:21:24+07:00",
+    "end_time": "2026-09-15T14:23:34+07:00",
+    "patient_id": "N/A",
+    "session_epoch": null
+  },
+  {
+    "device_id": "PF_010",
+    "alarm_id": 195,
+    "title": "Flow Problem (Replacement)",
+    "severity": "CAUTION",
+    "start_time": "2026-09-15T15:09:32+07:00",
+    "end_time": "2026-09-15T15:09:42+07:00",
+    "patient_id": "N/A",
+    "session_epoch": null
+  },
+  {
+    "device_id": "PF_010",
+    "alarm_id": 195,
+    "title": "Flow Problem (Replacement)",
+    "severity": "CAUTION",
+    "start_time": "2026-09-15T15:40:35+07:00",
+    "end_time": "2026-09-15T15:44:15+07:00",
+    "patient_id": "N/A",
+    "session_epoch": null
+  },
+  {
+    "device_id": "PF_010",
+    "alarm_id": 195,
+    "title": "Flow Problem (Replacement)",
+    "severity": "CAUTION",
+    "start_time": "2026-09-15T16:53:25+07:00",
+    "end_time": "2026-09-15T16:57:15+07:00",
+    "patient_id": "N/A",
+    "session_epoch": null
+  },
+  {
+    "device_id": "PF_010",
+    "alarm_id": 219,
+    "title": "Bag Empty (Dialysate) | Replacement Bag 2 Empty (Fixed tare)",
+    "severity": "CAUTION",
+    "start_time": "2026-09-15T17:56:55+07:00",
+    "end_time": "2026-09-15T17:59:24+07:00",
+    "patient_id": "N/A",
+    "session_epoch": null
+  },
+  {
+    "device_id": "PF_010",
+    "alarm_id": 195,
+    "title": "Flow Problem (Replacement)",
+    "severity": "CAUTION",
+    "start_time": "2026-09-15T18:16:45+07:00",
+    "end_time": "2026-09-15T18:16:55+07:00",
+    "patient_id": "N/A",
+    "session_epoch": null
+  },
+  {
+    "device_id": "PF_010",
+    "alarm_id": 195,
+    "title": "Flow Problem (Replacement)",
+    "severity": "CAUTION",
+    "start_time": "2026-09-15T19:08:05+07:00",
+    "end_time": "2026-09-15T19:08:45+07:00",
+    "patient_id": "N/A",
+    "session_epoch": null
+  },
+  {
+    "device_id": "PF_010",
+    "alarm_id": 194,
+    "title": "Flow Problem (Effluent)",
+    "severity": "CAUTION",
+    "start_time": "2026-09-16T03:35:18+07:00",
+    "end_time": "2026-09-16T03:35:58+07:00",
+    "patient_id": "N/A",
+    "session_epoch": null
+  },
+  {
+    "device_id": "PF_010",
+    "alarm_id": 209,
+    "title": "Bag Volume Incorrect - Effluent",
+    "severity": "CAUTION",
+    "start_time": "2026-09-16T03:36:28+07:00",
+    "end_time": "2026-09-16T03:37:18+07:00",
+    "patient_id": "N/A",
+    "session_epoch": null
+  },
+  {
+    "device_id": "PF_010",
+    "alarm_id": 194,
+    "title": "Flow Problem (Effluent)",
+    "severity": "CAUTION",
+    "start_time": "2026-09-16T03:51:18+07:00",
+    "end_time": "2026-09-16T03:51:48+07:00",
+    "patient_id": "N/A",
+    "session_epoch": null
+  },
+  {
+    "device_id": "PF_010",
+    "alarm_id": 219,
+    "title": "Bag Empty (Dialysate) | Replacement Bag 2 Empty (Fixed tare)",
+    "severity": "CAUTION",
+    "start_time": "2026-09-16T04:04:18+07:00",
+    "end_time": "2026-09-16T04:48:48+07:00",
+    "patient_id": "N/A",
+    "session_epoch": null
+  },
+  {
+    "device_id": "PF_006",
+    "alarm_id": 227,
+    "title": "Check Access",
+    "severity": "ADVISORY",
+    "start_time": "2026-09-16T06:51:46+07:00",
+    "end_time": "2026-09-16T06:52:06+07:00",
+    "patient_id": "g15",
+    "session_epoch": null
+  },
+  {
+    "device_id": "PF_010",
+    "alarm_id": 209,
+    "title": "Bag Volume Incorrect - Effluent",
+    "severity": "CAUTION",
+    "start_time": "2026-09-16T10:33:20+07:00",
+    "end_time": "2026-09-16T10:33:30+07:00",
+    "patient_id": "N/A",
+    "session_epoch": null
+  },
+  {
+    "device_id": "PF_010",
+    "alarm_id": 217,
+    "title": "Effluent Bag Incorrect",
+    "severity": "CAUTION",
+    "start_time": "2026-09-16T11:17:50+07:00",
+    "end_time": "2026-09-16T11:18:00+07:00",
+    "patient_id": "N/A",
+    "session_epoch": null
+  },
+  {
+    "device_id": "PF_006",
+    "alarm_id": 209,
+    "title": "Bag Volume Incorrect - Effluent",
+    "severity": "CAUTION",
+    "start_time": "2026-09-16T10:56:11+07:00",
+    "end_time": "2026-09-16T10:56:21+07:00",
+    "patient_id": "g15",
+    "session_epoch": null
+  },
+  {
+    "device_id": "PF_006",
+    "alarm_id": 227,
+    "title": "Check Access",
+    "severity": "ADVISORY",
+    "start_time": "2026-09-16T11:09:31+07:00",
+    "end_time": "2026-09-16T11:09:41+07:00",
+    "patient_id": "g15",
+    "session_epoch": null
+  },
+  {
+    "device_id": "PF_006",
+    "alarm_id": 227,
+    "title": "Check Access",
+    "severity": "ADVISORY",
+    "start_time": "2026-09-16T11:31:51+07:00",
+    "end_time": "2026-09-16T11:32:01+07:00",
+    "patient_id": "g15",
+    "session_epoch": null
+  },
+  {
+    "device_id": "PF_010",
+    "alarm_id": 209,
+    "title": "Bag Volume Incorrect - Effluent",
+    "severity": "CAUTION",
+    "start_time": "2026-09-16T12:28:51+07:00",
+    "end_time": "2026-09-16T12:29:01+07:00",
+    "patient_id": "N/A",
+    "session_epoch": null
+  },
+  {
+    "device_id": "PF_006",
+    "alarm_id": 197,
+    "title": "Flow Problem (Dialysate)",
+    "severity": "CAUTION",
+    "start_time": "2026-09-16T13:45:42+07:00",
+    "end_time": "2026-09-16T13:46:02+07:00",
+    "patient_id": "g15",
+    "session_epoch": null
+  },
+  {
+    "device_id": "PF_006",
+    "alarm_id": 195,
+    "title": "Flow Problem (Replacement)",
+    "severity": "CAUTION",
+    "start_time": "2026-09-16T14:23:52+07:00",
+    "end_time": "2026-09-16T14:24:02+07:00",
+    "patient_id": "g15",
+    "session_epoch": null
+  }
+]

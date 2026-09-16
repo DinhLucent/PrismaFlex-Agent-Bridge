@@ -1,0 +1,37 @@
+[
+  {
+    "treatment_id": "d6adb201-4f93-536e-b6ef-e4534aa25770",
+    "device_id": "PF_006",
+    "patient_id": "g15",
+    "patient_name": null,
+    "therapy_type_id": 3,
+    "start_time": "2026-09-16 06:36:56+07:00",
+    "end_time": null,
+    "outcome": "IN_PROGRESS",
+    "approval_status": "DRAFT",
+    "total_run_seconds": 37157,
+    "total_phases": null,
+    "total_packets": 3700,
+    "journal_row_count": 15,
+    "note_count": 0,
+    "is_valid": null,
+    "updated_at": "2026-09-16 17:24:45.065747+07:00",
+    "reject_reason": null,
+    "anticoag_type_id": null,
+    "therapy_type": "CVVHDF",
+    "anticoag_type": "Heparin",
+    "filter_sets_used": 1,
+    "filter_set_summary": {
+      "by_type": [
+        {
+          "count": 1,
+          "filter_type": "Oxiris",
+          "filter_type_id": 8
+        }
+      ],
+      "last_type": "Oxiris",
+      "last_type_id": 8,
+      "last_type_observed_at": "2026-09-16T16:56:13+07:00"
+    }
+  }
+]

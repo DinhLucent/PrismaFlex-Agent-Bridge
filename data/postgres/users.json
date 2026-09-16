@@ -1,0 +1,32 @@
+[
+  {
+    "id": "b384ca20-00be-45dd-a92e-815a40db28a2",
+    "username": "admin",
+    "display_name": "Administrator",
+    "role": "admin",
+    "password_hash": "$argon2id$v=19$m=65536,t=3,p=4$RfDfGpvqipBuOwHE89ezNA$kVvVVc6ceop9kpHBFRXqU8lMkVa1fJJzyt4kQADMKCg",
+    "is_active": true,
+    "must_change_password": false,
+    "created_by_user_id": null,
+    "created_at": "2026-09-10 23:27:06.911106+07:00",
+    "updated_at": "2026-09-14 18:56:40.824774+07:00",
+    "password_changed_at": "2026-09-10 23:28:02.031760+07:00",
+    "disabled_at": null,
+    "last_login_at": "2026-09-14 18:56:40.824039+07:00"
+  },
+  {
+    "id": "92110014-a3b0-490b-911e-6d430ccdcba7",
+    "username": "dhsang",
+    "display_name": "Đinh Hoàng Sáng",
+    "role": "admin",
+    "password_hash": "$argon2id$v=19$m=65536,t=3,p=4$yYXXjidw0XFLnRivkh3YKg$L5ysXO/g/aZ49DCHJXxB+E4hiNIxDkgS6WuDA4r/oxU",
+    "is_active": true,
+    "must_change_password": true,
+    "created_by_user_id": "b384ca20-00be-45dd-a92e-815a40db28a2",
+    "created_at": "2026-09-14 18:57:15.913116+07:00",
+    "updated_at": "2026-09-14 18:57:15.913119+07:00",
+    "password_changed_at": null,
+    "disabled_at": null,
+    "last_login_at": null
+  }
+]

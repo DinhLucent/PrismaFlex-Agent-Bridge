@@ -1,0 +1,506 @@
+[
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-15T11:34:05+07:00",
+    "param_id": 17,
+    "old_value": "0",
+    "new_value": "50",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-15T11:34:05+07:00",
+    "param_id": 411,
+    "old_value": "None",
+    "new_value": "M60",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-15T11:34:05+07:00",
+    "param_id": 413,
+    "old_value": "100",
+    "new_value": "0",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-15T11:34:05+07:00",
+    "param_id": 414,
+    "old_value": "0",
+    "new_value": "100",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-15T11:34:05+07:00",
+    "param_id": "therapy_type_id",
+    "old_value": "6",
+    "new_value": "3",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-15T11:37:53+07:00",
+    "param_id": 411,
+    "old_value": "M60",
+    "new_value": "Oxiris",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-15T11:38:23+07:00",
+    "param_id": 17,
+    "old_value": "50",
+    "new_value": "100",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-15T11:38:23+07:00",
+    "param_id": 196,
+    "old_value": "130",
+    "new_value": "330",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-15T12:32:53+07:00",
+    "param_id": 196,
+    "old_value": "330",
+    "new_value": "400",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-15T12:38:53+07:00",
+    "param_id": 19,
+    "old_value": "0",
+    "new_value": "800",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-15T12:38:53+07:00",
+    "param_id": 21,
+    "old_value": "0",
+    "new_value": "800",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-15T12:38:53+07:00",
+    "param_id": 23,
+    "old_value": "0",
+    "new_value": "1800",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-15T12:38:53+07:00",
+    "param_id": 22,
+    "old_value": "0",
+    "new_value": "200",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-15T12:55:03+07:00",
+    "param_id": 19,
+    "old_value": "800",
+    "new_value": "1000",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-15T12:55:03+07:00",
+    "param_id": 21,
+    "old_value": "800",
+    "new_value": "1000",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-15T12:55:03+07:00",
+    "param_id": 17,
+    "old_value": "100",
+    "new_value": "180",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-15T12:55:23+07:00",
+    "param_id": 23,
+    "old_value": "1800",
+    "new_value": "2204",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-15T12:55:23+07:00",
+    "param_id": 38,
+    "old_value": "0",
+    "new_value": "40",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-16T00:14:37+07:00",
+    "param_id": 23,
+    "old_value": "2204",
+    "new_value": "2202",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-16T00:14:37+07:00",
+    "param_id": 38,
+    "old_value": "40",
+    "new_value": "20",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_006",
+    "timestamp": "2026-09-16T06:09:49+07:00",
+    "param_id": 17,
+    "old_value": "0",
+    "new_value": "50",
+    "session_epoch": null,
+    "patient_id": "g15"
+  },
+  {
+    "device_id": "PF_006",
+    "timestamp": "2026-09-16T06:09:49+07:00",
+    "param_id": 411,
+    "old_value": "None",
+    "new_value": "M60",
+    "session_epoch": null,
+    "patient_id": "g15"
+  },
+  {
+    "device_id": "PF_006",
+    "timestamp": "2026-09-16T06:09:49+07:00",
+    "param_id": 413,
+    "old_value": "100",
+    "new_value": "0",
+    "session_epoch": null,
+    "patient_id": "g15"
+  },
+  {
+    "device_id": "PF_006",
+    "timestamp": "2026-09-16T06:09:49+07:00",
+    "param_id": 414,
+    "old_value": "0",
+    "new_value": "100",
+    "session_epoch": null,
+    "patient_id": "g15"
+  },
+  {
+    "device_id": "PF_006",
+    "timestamp": "2026-09-16T06:09:49+07:00",
+    "param_id": "therapy_type_id",
+    "old_value": "6",
+    "new_value": "3",
+    "session_epoch": null,
+    "patient_id": "g15"
+  },
+  {
+    "device_id": "PF_006",
+    "timestamp": "2026-09-16T06:13:56+07:00",
+    "param_id": 411,
+    "old_value": "M60",
+    "new_value": "Oxiris",
+    "session_epoch": null,
+    "patient_id": "g15"
+  },
+  {
+    "device_id": "PF_006",
+    "timestamp": "2026-09-16T06:14:26+07:00",
+    "param_id": 17,
+    "old_value": "50",
+    "new_value": "100",
+    "session_epoch": null,
+    "patient_id": "g15"
+  },
+  {
+    "device_id": "PF_006",
+    "timestamp": "2026-09-16T06:14:26+07:00",
+    "param_id": 196,
+    "old_value": "130",
+    "new_value": "330",
+    "session_epoch": null,
+    "patient_id": "g15"
+  },
+  {
+    "device_id": "PF_006",
+    "timestamp": "2026-09-16T06:33:16+07:00",
+    "param_id": 196,
+    "old_value": "330",
+    "new_value": "400",
+    "session_epoch": null,
+    "patient_id": "g15"
+  },
+  {
+    "device_id": "PF_006",
+    "timestamp": "2026-09-16T06:33:36+07:00",
+    "param_id": 23,
+    "old_value": "0",
+    "new_value": "2200",
+    "session_epoch": null,
+    "patient_id": "g15"
+  },
+  {
+    "device_id": "PF_006",
+    "timestamp": "2026-09-16T06:33:46+07:00",
+    "param_id": 19,
+    "old_value": "0",
+    "new_value": "1000",
+    "session_epoch": null,
+    "patient_id": "g15"
+  },
+  {
+    "device_id": "PF_006",
+    "timestamp": "2026-09-16T06:33:46+07:00",
+    "param_id": 21,
+    "old_value": "0",
+    "new_value": "1000",
+    "session_epoch": null,
+    "patient_id": "g15"
+  },
+  {
+    "device_id": "PF_006",
+    "timestamp": "2026-09-16T06:33:46+07:00",
+    "param_id": 22,
+    "old_value": "0",
+    "new_value": "200",
+    "session_epoch": null,
+    "patient_id": "g15"
+  },
+  {
+    "device_id": "PF_006",
+    "timestamp": "2026-09-16T06:39:26+07:00",
+    "param_id": 17,
+    "old_value": "100",
+    "new_value": "180",
+    "session_epoch": null,
+    "patient_id": "g15"
+  },
+  {
+    "device_id": "PF_006",
+    "timestamp": "2026-09-16T08:24:56+07:00",
+    "param_id": 23,
+    "old_value": "2200",
+    "new_value": "2400",
+    "session_epoch": null,
+    "patient_id": "g15"
+  },
+  {
+    "device_id": "PF_006",
+    "timestamp": "2026-09-16T08:24:56+07:00",
+    "param_id": 22,
+    "old_value": "200",
+    "new_value": "400",
+    "session_epoch": null,
+    "patient_id": "g15"
+  },
+  {
+    "device_id": "PF_006",
+    "timestamp": "2026-09-16T08:37:46+07:00",
+    "param_id": 23,
+    "old_value": "2400",
+    "new_value": "2500",
+    "session_epoch": null,
+    "patient_id": "g15"
+  },
+  {
+    "device_id": "PF_006",
+    "timestamp": "2026-09-16T08:37:46+07:00",
+    "param_id": 24,
+    "old_value": "0",
+    "new_value": "100",
+    "session_epoch": null,
+    "patient_id": "g15"
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-16T11:41:10+07:00",
+    "param_id": 19,
+    "old_value": "1000",
+    "new_value": "1400",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-16T11:41:10+07:00",
+    "param_id": 23,
+    "old_value": "2202",
+    "new_value": "2602",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-16T11:47:10+07:00",
+    "param_id": 21,
+    "old_value": "1000",
+    "new_value": "1200",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-16T11:47:10+07:00",
+    "param_id": 23,
+    "old_value": "2602",
+    "new_value": "2802",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-16T11:55:30+07:00",
+    "param_id": 23,
+    "old_value": "2802",
+    "new_value": "2800",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-16T11:55:30+07:00",
+    "param_id": 38,
+    "old_value": "20",
+    "new_value": "0",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_006",
+    "timestamp": "2026-09-16T12:11:01+07:00",
+    "param_id": 23,
+    "old_value": "2500",
+    "new_value": "2550",
+    "session_epoch": null,
+    "patient_id": "g15"
+  },
+  {
+    "device_id": "PF_006",
+    "timestamp": "2026-09-16T12:11:01+07:00",
+    "param_id": 24,
+    "old_value": "100",
+    "new_value": "150",
+    "session_epoch": null,
+    "patient_id": "g15"
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-16T12:40:01+07:00",
+    "param_id": 411,
+    "old_value": "Oxiris",
+    "new_value": "None",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-16T14:44:14+07:00",
+    "param_id": 19,
+    "old_value": "1400",
+    "new_value": "0",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-16T14:44:14+07:00",
+    "param_id": 21,
+    "old_value": "1200",
+    "new_value": "0",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-16T14:44:14+07:00",
+    "param_id": 23,
+    "old_value": "2800",
+    "new_value": "0",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-16T14:44:14+07:00",
+    "param_id": 22,
+    "old_value": "200",
+    "new_value": "0",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-16T14:44:14+07:00",
+    "param_id": 17,
+    "old_value": "180",
+    "new_value": "0",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-16T14:44:14+07:00",
+    "param_id": 413,
+    "old_value": "0",
+    "new_value": "100",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-16T14:44:14+07:00",
+    "param_id": 414,
+    "old_value": "100",
+    "new_value": "0",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-16T14:50:09+07:00",
+    "param_id": 196,
+    "old_value": "400",
+    "new_value": "130",
+    "session_epoch": null,
+    "patient_id": null
+  },
+  {
+    "device_id": "PF_010",
+    "timestamp": "2026-09-16T14:50:09+07:00",
+    "param_id": "therapy_type_id",
+    "old_value": "3",
+    "new_value": "6",
+    "session_epoch": null,
+    "patient_id": null
+  }
+]

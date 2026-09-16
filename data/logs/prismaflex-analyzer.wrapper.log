@@ -1,0 +1,55 @@
+2026-09-10 23:25:15,715 DEBUG - Starting WinSW in console mode
+2026-09-10 23:25:15,748 INFO  - Installing service 'PrismaFlex analyzer (prismaflex-analyzer)'...
+2026-09-10 23:25:15,814 INFO  - Service 'PrismaFlex analyzer (prismaflex-analyzer)' was installed successfully.
+2026-09-10 23:25:37,604 DEBUG - Starting WinSW in service mode
+2026-09-10 23:25:37,875 INFO  - Starting C:\PrismaFlex\releases\1.2.0\analyzer\prismaflex-analyzer.exe --install-root "C:\PrismaFlex"
+2026-09-10 23:25:37,924 INFO  - Started process 30136
+2026-09-10 23:25:37,948 DEBUG - Forwarding logs of the process System.Diagnostics.Process (prismaflex-analyzer) to WinSW.RollingLogAppender
+2026-09-10 23:26:38,734 INFO  - Stopping prismaflex-analyzer
+2026-09-10 23:26:38,735 DEBUG - ProcessKill 30136
+2026-09-10 23:26:38,745 DEBUG - Stopping process 30136...
+2026-09-10 23:26:39,324 DEBUG - Process 30136 canceled with code 0.
+2026-09-10 23:26:39,330 INFO  - Finished prismaflex-analyzer
+2026-09-10 23:26:43,784 DEBUG - Starting WinSW in service mode
+2026-09-10 23:26:44,060 INFO  - Starting C:\PrismaFlex\releases\1.2.0\analyzer\prismaflex-analyzer.exe --install-root "C:\PrismaFlex"
+2026-09-10 23:26:44,113 INFO  - Started process 15904
+2026-09-10 23:26:44,133 DEBUG - Forwarding logs of the process System.Diagnostics.Process (prismaflex-analyzer) to WinSW.RollingLogAppender
+2026-09-10 23:28:32,898 INFO  - Stopping prismaflex-analyzer
+2026-09-10 23:28:32,899 DEBUG - ProcessKill 15904
+2026-09-10 23:28:32,908 DEBUG - Stopping process 15904...
+2026-09-10 23:28:33,863 DEBUG - Process 15904 canceled with code 0.
+2026-09-10 23:28:33,867 INFO  - Finished prismaflex-analyzer
+2026-09-10 23:28:36,233 DEBUG - Starting WinSW in service mode
+2026-09-10 23:28:36,473 INFO  - Starting C:\PrismaFlex\releases\1.2.0\analyzer\prismaflex-analyzer.exe --install-root "C:\PrismaFlex"
+2026-09-10 23:28:36,513 INFO  - Started process 33964
+2026-09-10 23:28:36,533 DEBUG - Forwarding logs of the process System.Diagnostics.Process (prismaflex-analyzer) to WinSW.RollingLogAppender
+2026-09-11 00:44:03,861 INFO  - Stopping prismaflex-analyzer
+2026-09-11 00:44:03,862 DEBUG - ProcessKill 33964
+2026-09-11 00:44:03,872 DEBUG - Stopping process 33964...
+2026-09-11 00:44:04,117 DEBUG - Process 33964 canceled with code 0.
+2026-09-11 00:44:04,120 INFO  - Finished prismaflex-analyzer
+2026-09-11 00:44:48,857 DEBUG - Starting WinSW in service mode
+2026-09-11 00:44:49,096 INFO  - Starting C:\PrismaFlex\releases\1.2.0\analyzer\prismaflex-analyzer.exe --install-root "C:\PrismaFlex"
+2026-09-11 00:44:49,177 INFO  - Started process 148724
+2026-09-11 00:44:49,194 DEBUG - Forwarding logs of the process System.Diagnostics.Process (prismaflex-analyzer) to WinSW.RollingLogAppender
+2026-09-11 15:49:03,500 DEBUG - Starting WinSW in service mode
+2026-09-11 15:49:03,786 INFO  - Starting C:\PrismaFlex\releases\1.2.0\analyzer\prismaflex-analyzer.exe --install-root "C:\PrismaFlex"
+2026-09-11 15:49:16,333 INFO  - Started process 7684
+2026-09-11 15:49:16,345 DEBUG - Forwarding logs of the process System.Diagnostics.Process (prismaflex-analyzer) to WinSW.RollingLogAppender
+2026-09-11 15:57:21,127 DEBUG - Starting WinSW in service mode
+2026-09-11 15:57:21,660 INFO  - Starting C:\PrismaFlex\releases\1.2.0\analyzer\prismaflex-analyzer.exe --install-root "C:\PrismaFlex"
+2026-09-11 15:57:32,229 INFO  - Started process 6968
+2026-09-11 15:57:32,242 DEBUG - Forwarding logs of the process System.Diagnostics.Process (prismaflex-analyzer) to WinSW.RollingLogAppender
+2026-09-11 15:59:00,767 DEBUG - Starting WinSW in service mode
+2026-09-11 15:59:00,978 INFO  - Starting C:\PrismaFlex\releases\1.2.0\analyzer\prismaflex-analyzer.exe --install-root "C:\PrismaFlex"
+2026-09-11 15:59:01,014 INFO  - Started process 3912
+2026-09-11 15:59:01,029 DEBUG - Forwarding logs of the process System.Diagnostics.Process (prismaflex-analyzer) to WinSW.RollingLogAppender
+2026-09-15 02:09:47,460 INFO  - Stopping prismaflex-analyzer
+2026-09-15 02:09:47,497 DEBUG - ProcessKill 3912
+2026-09-15 02:09:47,510 DEBUG - Stopping process 3912...
+2026-09-15 02:09:47,613 DEBUG - Process 3912 canceled with code 0.
+2026-09-15 02:09:47,618 INFO  - Finished prismaflex-analyzer
+2026-09-15 02:09:58,458 DEBUG - Starting WinSW in service mode
+2026-09-15 02:09:58,622 INFO  - Starting C:\PrismaFlex\releases\1.2.1\analyzer\prismaflex-analyzer.exe --install-root "C:\PrismaFlex"
+2026-09-15 02:09:58,671 INFO  - Started process 8816
+2026-09-15 02:09:58,684 DEBUG - Forwarding logs of the process System.Diagnostics.Process (prismaflex-analyzer) to WinSW.RollingLogAppender

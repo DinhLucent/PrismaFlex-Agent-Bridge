@@ -1,0 +1,9 @@
+﻿{
+    "migration_started":  false,
+    "new_version":  "1.2.1",
+    "old_revision":  "d4b2a8f91c30",
+    "backup_id":  "57b765fc1fee48f99dc8a8122935d77f",
+    "phase":  "HEALTHY",
+    "old_version":  "1.2.0",
+    "new_revision":  "d4b2a8f91c30"
+}

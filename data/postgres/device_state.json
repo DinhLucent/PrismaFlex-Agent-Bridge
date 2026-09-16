@@ -1,0 +1,52 @@
+[
+  {
+    "device_id": "PF_010",
+    "active_mode": "IDLE",
+    "active_treatment_id": null,
+    "last_patient_id": null,
+    "last_seen_time": null,
+    "last_run_time_sec": null,
+    "active_chunk_index": null,
+    "updated_at": "2026-09-16 16:15:42.826369+07:00"
+  },
+  {
+    "device_id": "PF_011",
+    "active_mode": "IDLE",
+    "active_treatment_id": null,
+    "last_patient_id": null,
+    "last_seen_time": null,
+    "last_run_time_sec": null,
+    "active_chunk_index": null,
+    "updated_at": "2026-09-16 16:58:22.628762+07:00"
+  },
+  {
+    "device_id": "PF_007",
+    "active_mode": "IDLE",
+    "active_treatment_id": null,
+    "last_patient_id": null,
+    "last_seen_time": null,
+    "last_run_time_sec": null,
+    "active_chunk_index": null,
+    "updated_at": "2026-09-16 17:24:39.105586+07:00"
+  },
+  {
+    "device_id": "PF_006",
+    "active_mode": "LIVE",
+    "active_treatment_id": "d6adb201-4f93-536e-b6ef-e4534aa25770",
+    "last_patient_id": "g15",
+    "last_seen_time": "2026-09-16 16:56:13+07:00",
+    "last_run_time_sec": 7540.0,
+    "active_chunk_index": null,
+    "updated_at": "2026-09-16 17:24:45.069407+07:00"
+  },
+  {
+    "device_id": "PF_008",
+    "active_mode": "IDLE",
+    "active_treatment_id": null,
+    "last_patient_id": null,
+    "last_seen_time": null,
+    "last_run_time_sec": null,
+    "active_chunk_index": null,
+    "updated_at": "2026-09-16 16:59:02.979408+07:00"
+  }
+]

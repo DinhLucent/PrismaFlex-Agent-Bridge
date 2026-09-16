@@ -1,0 +1,54 @@
+[
+  {
+    "id": "d6adb201-4f93-536e-b6ef-e4534aa25770",
+    "device_id": "PF_006",
+    "patient_id": "g15",
+    "patient_name": null,
+    "therapy_type_id": 3,
+    "anticoag_type_id": null,
+    "start_time": "2026-09-16 06:36:56+07:00",
+    "first_run_time": null,
+    "end_time": null,
+    "last_seen_time": "2026-09-16 16:56:13+07:00",
+    "outcome": "IN_PROGRESS",
+    "fsm_state": "RECORDING",
+    "close_reason": null,
+    "total_run_seconds": 37157,
+    "total_paused_seconds": null,
+    "total_phases": null,
+    "total_packets": 3700,
+    "is_valid": null,
+    "had_interruption": null,
+    "had_program_restart": null,
+    "sw_version": "SW8.20V04R00",
+    "start_time_override": null,
+    "end_time_override": null,
+    "clinical_notes": null,
+    "created_at": "2026-09-16 07:04:32.863489+07:00",
+    "updated_at": "2026-09-16 17:24:45.074611+07:00",
+    "version": 11363,
+    "last_packet_time": null,
+    "last_run_time_sec": 7540.0,
+    "continuity_source": null,
+    "patient_yob": null,
+    "patient_gender": null,
+    "patient_weight": null,
+    "bed_number": null,
+    "admission_number": null,
+    "diagnosis": null,
+    "continuation_of_treatment_id": null,
+    "filter_sets_used": 1,
+    "filter_set_summary": {
+      "by_type": [
+        {
+          "count": 1,
+          "filter_type": "Oxiris",
+          "filter_type_id": 8
+        }
+      ],
+      "last_type": "Oxiris",
+      "last_type_id": 8,
+      "last_type_observed_at": "2026-09-16T16:56:13+07:00"
+    }
+  }
+]

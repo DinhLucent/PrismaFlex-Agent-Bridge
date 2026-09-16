@@ -1,0 +1,27 @@
+[
+  {
+    "total": 89,
+    "device_id": "PF_008",
+    "is_completed": true
+  },
+  {
+    "total": 3867,
+    "device_id": "PF_006",
+    "is_completed": true
+  },
+  {
+    "total": 9401,
+    "device_id": "PF_010",
+    "is_completed": true
+  },
+  {
+    "total": 26,
+    "device_id": "PF_011",
+    "is_completed": true
+  },
+  {
+    "total": 670,
+    "device_id": "PF_007",
+    "is_completed": true
+  }
+]

@@ -1,0 +1,7 @@
+{
+    "management_protocol":  2,
+    "active_version":  "1.2.1",
+    "site_profile_hash":  "a99414a91f73a66134caf4a38f800d5a08b0b1235ade0f3d2530d582eea28967",
+    "pg_bin":  "C:\\Program Files\\PostgreSQL\\16\\bin",
+    "phase":  "READY"
+}
