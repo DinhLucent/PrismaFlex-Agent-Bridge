@@ -1,5 +1,7 @@
 # Nhận bộ cài PrismaFlex 1.2.2
 
+**Đã thay thế bằng [1.2.3](../1.2.3/START-HERE.md).** Review mở rộng phát hiện trục/tooltip chart và giờ monitor còn phụ thuộc timezone trình duyệt. Dùng 1.2.3 cho lần cài/cập nhật mới; giữ trang này làm lịch sử.
+
 Đây là bản ứng viên để nghiệm thu tại máy đích. Đọc [review](REVIEW.md) trước khi cập nhật. Bộ cài có chữ ký phát hành; trạng thái prerelease thể hiện còn bước nghiệm thu máy đích, không phải dùng khóa test.
 
 - [Tải bộ cài từ GitHub Releases](https://github.com/DinhLucent/PrismaFlex-Agent-Bridge/releases/tag/v1.2.2-pilot)

@@ -1,0 +1,12 @@
+{
+  "version": "1.2.3",
+  "filename": "PrismaFlex-1.2.3-windows-x64.zip",
+  "bytes": 151047643,
+  "sha256": "4627554fb422ebb21c98c4914869aebc326239054dd3fc89a7c93b07d1e30939",
+  "url": "https://github.com/DinhLucent/PrismaFlex-Agent-Bridge/releases/download/v1.2.3-pilot/PrismaFlex-1.2.3-windows-x64.zip",
+  "source_runtime_commit": "029d0eebd6dc51d556585d69b9570cfe8764732a",
+  "source_docs_commit": "4a20c16",
+  "database_revision": "d4b2a8f91c30",
+  "management_protocol": 2,
+  "acceptance": "Target-machine acceptance required"
+}

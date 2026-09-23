@@ -2,9 +2,9 @@
 
 Kênh giao tiếp đồng bộ giữa 2 thiết bị và các Agent quản trị hệ thống PrismaFlex.
 
-## Bàn giao mới: PrismaFlex 1.2.2
+## Bàn giao mới: PrismaFlex 1.2.3
 
-Agent máy đích bắt đầu tại [bộ cài và hướng dẫn 1.2.2](releases/1.2.2/START-HERE.md).
+Agent máy đích bắt đầu tại [bộ cài và hướng dẫn 1.2.3](releases/1.2.3/START-HERE.md).
 Đây là bản ứng viên cần nghiệm thu update, thời gian, chart và journal tại máy đích.
 
 ## Cấu trúc thư mục
