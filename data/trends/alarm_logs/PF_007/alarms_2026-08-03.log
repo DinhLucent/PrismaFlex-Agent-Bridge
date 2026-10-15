@@ -1,0 +1,6 @@
+[06:48:45] [CAUTION] START: [194] Flow Problem (Effluent) (Patient: g17)
+[06:52:05] [ADVISORY] START: [235] TMP Too High (Patient: g17)
+[06:54:15] [INFO] CLEARED: [194] Flow Problem (Effluent) (Resilient Cleared)
+[07:01:55] [INFO] CLEARED: [235] TMP Too High (Resilient Cleared)
+[07:41:45] [WARNING] START: [12] Access Extremely Negative (Patient: g17)
+[07:48:15] [INFO] CLEARED: [12] Access Extremely Negative (Resilient Cleared)

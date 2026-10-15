@@ -1,0 +1,7 @@
+[19:37:45] [ADVISORY] START: [314] Battery Exhausted (Patient: N/A)
+[20:08:30] [ADVISORY] START: [315] Main Power Lost (Patient: g15 ngan)
+[20:15:00] [INFO] CLEARED: [315] Main Power Lost (Resilient Cleared)
+[20:15:10] [CAUTION] START: [194] Flow Problem (Effluent) (Patient: g15 ngan)
+[20:20:40] [INFO] CLEARED: [194] Flow Problem (Effluent) (Resilient Cleared)
+[21:22:30] [CAUTION] START: [195] Flow Problem (Replacement) (Patient: g15 ngan)
+[21:27:50] [INFO] CLEARED: [195] Flow Problem (Replacement) (Resilient Cleared)

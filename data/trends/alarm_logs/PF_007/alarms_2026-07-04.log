@@ -1,0 +1,7 @@
+[04:45:15] [WARNING] START: [11] Return Extremely Positive (Patient: g6)
+[04:51:35] [INFO] CLEARED: [11] Return Extremely Positive (Resilient Cleared)
+[04:59:15] [ADVISORY] START: [235] TMP Too High (Patient: g6)
+[05:03:25] [WARNING] START: [12] Access Extremely Negative (Patient: g6)
+[05:04:45] [INFO] CLEARED: [235] TMP Too High (Resilient Cleared)
+[05:09:05] [INFO] CLEARED: [12] Access Extremely Negative (Resilient Cleared)
+[05:23:35] [MALFUNCTION] START: [142] Pressure Zero Test (Patient: g6)

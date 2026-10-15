@@ -1,0 +1,6 @@
+[21:25:50] [CAUTION] START: [195] Flow Problem (Replacement) (Patient: g16)
+[21:27:20] [WARNING] START: [12] Access Extremely Negative (Patient: g16)
+[21:27:30] [WARNING] START: [13] Access Extremely Negative (Patient: g16)
+[21:32:40] [INFO] CLEARED: [12] Access Extremely Negative (Resilient Cleared)
+[21:34:50] [INFO] CLEARED: [13] Access Extremely Negative (Resilient Cleared)
+[21:35:50] [INFO] CLEARED: [195] Flow Problem (Replacement) (Resilient Cleared)

@@ -1,0 +1,56 @@
+2026-09-10 16:20:25,838 [ERROR] PrismaFlexBackend: Deferred compression scan error: (psycopg2.OperationalError) connection to server at "127.0.0.1", port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-10 16:21:29,778 [ERROR] PrismaFlexBackend: Deferred compression scan error: (psycopg2.OperationalError) connection to server at "127.0.0.1", port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-10 16:22:32,593 [ERROR] PrismaFlexBackend: Deferred compression scan error: (psycopg2.OperationalError) connection to server at "127.0.0.1", port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-10 16:23:35,856 [ERROR] PrismaFlexBackend: Deferred compression scan error: (psycopg2.OperationalError) connection to server at "127.0.0.1", port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-10 16:24:45,191 [ERROR] PrismaFlexBackend: Deferred compression scan error: (psycopg2.OperationalError) connection to server at "127.0.0.1", port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-10 16:25:48,298 [ERROR] PrismaFlexBackend: Deferred compression scan error: (psycopg2.OperationalError) connection to server at "127.0.0.1", port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-10 16:26:50,987 [ERROR] PrismaFlexBackend: Deferred compression scan error: (psycopg2.OperationalError) connection to server at "127.0.0.1", port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-10 16:27:53,587 [ERROR] PrismaFlexBackend: Deferred compression scan error: (psycopg2.OperationalError) connection to server at "127.0.0.1", port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-10 16:28:56,236 [ERROR] PrismaFlexBackend: Deferred compression scan error: (psycopg2.OperationalError) connection to server at "127.0.0.1", port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-10 16:30:02,238 [ERROR] PrismaFlexBackend: Deferred compression scan error: (psycopg2.OperationalError) connection to server at "127.0.0.1", port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-10 16:31:05,220 [ERROR] PrismaFlexBackend: Deferred compression scan error: (psycopg2.OperationalError) connection to server at "127.0.0.1", port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-10 16:32:37,491 [ERROR] PrismaFlexBackend: Deferred compression scan error: (psycopg2.OperationalError) connection to server at "127.0.0.1", port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-10 16:33:40,472 [ERROR] PrismaFlexBackend: Deferred compression scan error: (psycopg2.OperationalError) connection to server at "127.0.0.1", port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-10 16:34:43,196 [ERROR] PrismaFlexBackend: Deferred compression scan error: (psycopg2.OperationalError) connection to server at "127.0.0.1", port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)

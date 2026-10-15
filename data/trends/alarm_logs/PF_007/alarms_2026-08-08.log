@@ -1,0 +1,6 @@
+[00:00:01] [WARNING] START: [13] Access Extremely Negative (Patient: g14)
+[00:05:35] [INFO] CLEARED: [13] Access Extremely Negative (Resilient Cleared)
+[01:27:25] [CAUTION] START: [197] Flow Problem (Dialysate) (Patient: g14)
+[01:33:55] [INFO] CLEARED: [197] Flow Problem (Dialysate) (Resilient Cleared)
+[23:50:40] [CAUTION] START: [326] Flow Problem (Dialysis) (Patient: @)
+[23:50:45] [CAUTION] START: [326] Flow Problem (Dialysis) (Patient: @)

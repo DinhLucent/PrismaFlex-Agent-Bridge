@@ -1,0 +1,6 @@
+[19:56:25] [MALFUNCTION] START: [112] Prime Self-Test (19) (Patient: G10)
+[20:01:45] [INFO] CLEARED: [112] Prime Self-Test (19) (Resilient Cleared)
+[21:41:00] [CAUTION] START: [209] Bag Volume Incorrect - Effluent (Patient: G10)
+[21:46:20] [INFO] CLEARED: [209] Bag Volume Incorrect - Effluent (Resilient Cleared)
+[22:49:00] [CAUTION] START: [194] Flow Problem (Effluent) (Patient: G10)
+[22:54:30] [INFO] CLEARED: [194] Flow Problem (Effluent) (Resilient Cleared)
