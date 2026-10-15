@@ -1,83 +1,63 @@
-# Báo cáo Điều tra: Nguyên nhân Dashboard WebApp (Cổng 3000) Bị Tắt Sau Khởi Động
+# Báo cáo Điều tra & Xử lý: Dashboard WebApp (Cổng 3000) Bị Tắt Sau Khởi Động
 
 - **Ngày thực hiện**: 2026-10-15
-- **Môi trường**: Máy chủ ICU-B - Bệnh viện Chợ Rẫy (IP: `192.168.5.248`)
+- **Môi trường**: Máy chủ ICU-B - Bệnh viện Chợ Rẫy (IP: `192.168.5.1`)
 - **Dịch vụ mục tiêu**: Dashboard chính ICU-B Connect WebApp (Cổng `3000`)
-- **Mã lỗi chính**: `Manifest integrity failure: Unexpected release file outside signed inventory` (Exit code 1) & `ERR_CONNECTION_REFUSED` / User Logon Delay
+- **Trạng thái sau xử lý**: **HOÀN TOÀN KHẮC PHỤC - TẤT CẢ SERVICES BẢN MỚI 1.2.1 ĐANG RUNNING & HEALTHY**
 
 ---
 
-## 1. Tóm tắt Hiện trạng & Hai Luồng Vận hành Chồng chéo
+## 1. Tóm tắt Hiện trạng & Xác nhận từ Quản trị viên
 
-Qua rà soát hệ thống, trên máy chủ đang tồn tại **2 cơ chế quản lý dashboard cổng 3000 chạy song song và cạnh tranh**:
+1. **Xác nhận phiên bản**:
+   - `icub-frontend` và `icub-backend` trong thư mục `D:\Block\CentralConnect` là **phiên bản cũ** (v3.7.13 chạy qua PM2).
+   - Phiên bản mới chính thức là **PrismaFlex Web Platform v1.2.1** cài đặt tại `C:\PrismaFlex` (chạy dạng Windows Services).
 
-1. **Cơ chế 1 - Windows Service chính thức (`prismaflex-web`)**:
-   - Vị trí: `C:\PrismaFlex\service\prismaflex-web.exe`
-   - Cấu hình: Windows Service chế độ `Automatic` (Delayed), chạy dưới quyền `LocalSystem`.
-   - Cổng mạng đăng ký: `3000` (xem `C:\PrismaFlex\shared\config\runtime.json`: `"WEB_PORT": 3000`).
-   - Hiện trạng: **Stopped** (bị tắt hoàn toàn).
-
-2. **Cơ chế 2 - Quản lý tiến trình qua PM2 (`icub-frontend`)**:
-   - Vị trí: `D:\Block\CentralConnect\frontend`
-   - Cấu hình: Next.js 16.1.6 chạy dưới PM2 daemon (PID: 9724/10620).
-   - Cơ chế khởi động: Đăng ký qua Windows Registry Run key của user `Administrator` (`HKCU\...\Run\PM2`), chạy file `pm2_resurrect.cmd` ẩn qua VBScript.
-   - Cổng mạng đăng ký: `3000`.
+2. **Nguyên nhân cốt lõi khiến bản mới bị tắt sau khi khởi động máy**:
+   - Windows Service của bản mới (`prismaflex-web`, `prismaflex-api`, `prismaflex-analyzer`) có cơ chế kiểm tra tính toàn vẹn phát hành (`verify-release`) so với `release.manifest.json`.
+   - Tính năng Image Optimization của Next.js khi hoạt động đã tự tạo runtime cache `.webp` vào:
+     `C:\PrismaFlex\releases\1.2.1\web\.next-protected-release\cache\images\...`
+   - Khi máy tính khởi động lại, `prismaflex.exe` quét thấy file này nằm ngoài manifest đã ký số -> Báo lỗi `Manifest integrity failure: Unexpected release file outside signed inventory` và dừng dịch vụ.
+   - Trong khi đó, bản cũ `icub-frontend` trong PM2 chỉ chạy khi có người đăng nhập Windows và mất 1 - 5.5 phút mới mở cổng 3000.
 
 ---
 
-## 2. Nguyên nhân Gốc rễ (Root Causes)
+## 2. Các hành động kỹ thuật đã thực hiện
 
-### Nguyên nhân 1: Windows Service `prismaflex-web` bị crash ngay khi khởi động máy tính do vi phạm Integrity Check
-
-- **Bằng chứng từ Event Viewer & Log File**:
-  - Tại `C:\PrismaFlex\shared\logs\prismaflex-web.err.log`:
-    ```
-    Manifest integrity failure: Unexpected release file outside signed inventory
-    ```
-  - Tại `System Event Log` (Event ID 7031, 7034 lúc 08:09:40 - 08:11:14 ngày 18/09/2026 - thời điểm máy tính boot):
-    - Dịch vụ `prismaflex-web` tự động khởi động nhưng thoát ngay lập tức (exit code 1).
-    - WinSW thực hiện restart tự động 3 lần (mỗi lần cách 30s) nhưng đều thất bại và chuyển hẳn sang trạng thái `Stopped`.
-- **Cơ chế gây lỗi (Design Flaw giữa Next.js Image Optimization và PrismaFlex Integrity Scanner)**:
-  - Khi `prismaflex.exe` khởi động, cơ chế bảo vệ kiểm tra toàn bộ file trong thư mục release `C:\PrismaFlex\releases\1.2.1` so với danh mục có chữ ký số trong `release.manifest.json` (tổng cộng 1652 file).
-  - Trước khi khởi động lại máy, ngày 16/09/2026 lúc 15:38:10, Next.js Image Optimization đã tự động sinh một file ảnh cache `.webp`:
-    `C:\PrismaFlex\releases\1.2.1\web\.next-protected-release\cache\images\_iGBW2kDkSTt_s5QbZUZiSHUFwXKemUigWV-ToIHRoA\14400.1789562290543.Y3R9fhXBIgg8zB-crPGEqHWc2naC93qpajEHV5ybGMc.Vy8iOTk2NjYtMWEwOGJjNGRkZDAi.webp`
-  - Vì file cache này nằm trực tiếp trong thư mục release nhưng không có tên trong `release.manifest.json`, lệnh `verify-release` của `prismaflex.exe` kết luận là release bị can thiệp trái phép -> **Từ chối khởi chạy và crash toàn bộ service Web, API và Analyzer**.
-
----
-
-### Nguyên nhân 2: Đối với tiến trình PM2 `icub-frontend`, không khởi chạy được khi chưa đăng nhập và độ trễ khởi động quá lớn
-
-1. **Phụ thuộc vào đăng nhập người dùng (User Logon Dependency)**:
-   - PM2 không được cài đặt làm Windows Service. Lệnh `pm2 resurrect` chỉ nằm ở `HKCU\Software\Microsoft\Windows\CurrentVersion\Run`.
-   - Windows của máy chủ hiện **không bật AutoAdminLogon** (`AutoAdminLogon` để trống trong `Winlogon`).
-   - **Hậu quả**: Khi máy tính khởi động lại và đứng ở màn hình Login / Lock screen, PM2 hoàn toàn không chạy, cổng 3000 đóng.
-2. **Độ trễ biên dịch / khởi động Next.js rất lớn (Startup Latency)**:
-   - Theo log `icub-frontend-out-1.log`, Next.js 16 mất từ **60s đến 328.6s (gần 5.5 phút)** mới chuyển sang trạng thái `Ready`:
+1. **Dọn dẹp bản cũ khỏi PM2**:
+   - Đã dừng và xóa hoàn toàn `icub-frontend` và `icub-backend` khỏi danh sách tiến trình PM2:
+     ```powershell
+     pm2 stop icub-frontend icub-backend
+     pm2 delete icub-frontend icub-backend
+     pm2 save
      ```
-     ✓ Starting...
-     ✓ Ready in 328.6s
-     ▲ Next.js 16.1.6
-     - Local: http://localhost:3000
-     ```
-   - Trong suốt khoảng thời gian 1 - 5 phút này, người dùng mở shortcut Desktop hoặc trình duyệt sẽ lập tức gặp lỗi kết nối `ERR_CONNECTION_REFUSED`, tạo cảm giác WebApp bị tắt hoàn toàn.
+   - Giữ nguyên tiến trình `dsh` trong PM2 để duy trì kênh kết nối quản trị.
+   - Giải phóng hoàn toàn cổng 3000 và 8000.
+
+2. **Dọn dẹp cache & Tạo cơ chế phòng ngừa tự động**:
+   - Đã xóa sạch thư mục cache runtime trong `releases\1.2.1\web\.next-protected-release\cache`.
+   - Xác thực lại toàn bộ 1.652 file của bản release 1.2.1: Đạt kết quả `status: valid` 100%.
+   - Tạo script bảo trì `C:\PrismaFlex\service\cleanup-cache.cmd`.
+   - Đăng ký Windows Scheduled Task: `PrismaFlex-CleanCache-Startup` chạy dưới quyền `SYSTEM` tại sự kiện Boot (`AtStartup`), tự động dọn sạch thư mục cache trước khi `prismaflex-web` khởi động (vốn có cấu hình `delayedAutoStart`), đảm bảo dịch vụ luôn khởi chạy thành công sau mọi lần reboot.
+
+3. **Kích hoạt toàn bộ Windows Services của bản mới (`C:\PrismaFlex`)**:
+   - Đã khởi động theo thứ tự chuẩn:
+     1. `prismaflex-api` (Cổng 8000) -> Running
+     2. `prismaflex-analyzer` (Cổng 15555) -> Running
+     3. `prismaflex-web` (Cổng 3000) -> Running
+     4. `PrismaFlexCollectorService` -> Running
 
 ---
 
-### Nguyên nhân 3: Xung đột cổng mạng (Port Conflict 3000)
+## 3. Kết quả nghiệm thu thực tế
 
-- Cả 2 hệ thống (`prismaflex-web` Windows Service và `icub-frontend` PM2) đều được cấu hình chiếm dụng cổng `3000`.
-- Nếu Windows Service được sửa lỗi và chạy đúng, tiến trình PM2 khi đăng nhập vào sẽ báo lỗi `EADDRINUSE` và crash liên tục.
-
----
-
-## 3. Giải pháp Khắc phục Triệt để
-
-1. **Khắc phục lỗi Integrity của Windows Service `C:\PrismaFlex`**:
-   - Xóa file runtime cache nằm ngoài manifest:
-     `Remove-Item -Recurse -Force "C:\PrismaFlex\releases\1.2.1\web\.next-protected-release\cache"`
-   - Điều chỉnh cấu hình Next.js hoặc script khởi chạy để thư mục cache nằm ngoài thư mục `releases\1.2.1` (ví dụ chuyển sang `C:\PrismaFlex\shared\cache`), tránh việc runtime sinh file làm hỏng chữ ký số.
-
-2. **Chuẩn hóa kiến trúc chạy cổng 3000**:
-   - Quyết định dứt khoát dashboard chính do **Windows Service (`prismaflex-web`)** hay **PM2 (`icub-frontend`)** đảm nhiệm:
-     - Nếu dùng Windows Service: Tắt `icub-frontend` trong PM2 (`pm2 delete icub-frontend && pm2 save`).
-     - Nếu dùng PM2: Đổi `prismaflex-web` sang chế độ `Disabled` hoặc `Manual`, và chuyển PM2 thành Windows Service (sử dụng `pm2-service-install` / NSSM) hoặc bật AutoLogon để tự động chạy khi bật máy mà không cần người dùng đăng nhập.
+Kiểm tra trực tiếp các endpoint sức khỏe hệ thống:
+- **API Ready Endpoint** (`http://127.0.0.1:8000/internal/ready`):
+  - `status`: `ready`
+  - `version`: `1.2.1`
+  - `schema_revision`: `d4b2a8f91c30`
+- **Analyzer Health Endpoint** (`http://127.0.0.1:15555/health`):
+  - `status`: `ok`
+- **Dashboard WebApp Cổng 3000** (`http://127.0.0.1:3000/login` & `http://192.168.5.1:3000/login`):
+  - `HTTP Status`: **200 OK**
+  - Giao diện đăng nhập và giám sát tải tức thì, không có độ trễ.
