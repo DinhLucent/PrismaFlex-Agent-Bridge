@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     Xác minh luồng chuyển tiếp dữ liệu từ Collector Outbox sang OIE Mirth Connect.
 .DESCRIPTION

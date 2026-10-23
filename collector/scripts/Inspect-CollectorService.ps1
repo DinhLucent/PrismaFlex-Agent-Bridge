@@ -39,7 +39,7 @@ foreach ($p in $ports) {
     } else {
         $portResults[$p] = "NOT_LISTENING"
     }
-    Write-Host "Port $p: $($portResults[$p])"
+    Write-Host "Port ${p}: $($portResults[$p])"
 }
 
 # 3. Kiểm tra Ping 11 máy lọc PrismaFlex

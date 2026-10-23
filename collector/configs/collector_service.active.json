@@ -1,0 +1,80 @@
+{
+  "devices": [
+    {
+      "device_id": "6",
+      "enabled": true,
+      "host": "192.168.5.26"
+    },
+    {
+      "device_id": "10",
+      "enabled": true,
+      "host": "192.168.5.30"
+    },
+    {
+      "device_id": "11",
+      "enabled": true,
+      "host": "192.168.5.31"
+    },
+    {
+      "device_id": "7",
+      "enabled": true,
+      "host": "192.168.5.27"
+    },
+    {
+      "device_id": "4",
+      "enabled": true,
+      "host": "192.168.5.24"
+    },
+    {
+      "device_id": "5",
+      "enabled": true,
+      "host": "192.168.5.25"
+    },
+    {
+      "device_id": "3",
+      "enabled": true,
+      "host": "192.168.5.23"
+    },
+    {
+      "device_id": "8",
+      "enabled": true,
+      "host": "192.168.5.28"
+    },
+    {
+      "device_id": "9",
+      "enabled": true,
+      "host": "192.168.5.29"
+    }
+  ],
+  "network": {
+    "connect_timeout_seconds": 5,
+    "read_timeout_seconds": 2,
+    "reconnect_initial_seconds": 2,
+    "reconnect_max_seconds": 60,
+    "silent_connection_timeout_seconds": 120
+  },
+  "runtime": {
+    "busy_timeout_ms": 5000,
+    "candidate_retention_days": 7,
+    "canonical_retention_days": 30,
+    "full_raw_retention_hours": 48,
+    "graceful_shutdown_seconds": 30,
+    "max_packet_bytes": 1048576,
+    "minimum_free_disk_bytes": 2147483648,
+    "outbox_dir": "C:\\ProgramData\\PrismaFlex\\Collector\\outbox",
+    "outbox_retention_days": 3,
+    "poll_interval_seconds": 1,
+    "runtime_dir": "C:\\ProgramData\\PrismaFlex\\Collector\\runtime",
+    "service_failover_seconds": 60,
+    "service_recovery_packets": 5,
+    "service_recovery_seconds": 60,
+    "service_suspect_seconds": 30,
+    "snapshot_interval_seconds": 10,
+    "source_hold_down_seconds": 120,
+    "status_path": "C:\\ProgramData\\PrismaFlex\\Collector\\status\\collector_status.json",
+    "storage_retry_seconds": 1,
+    "writer_enqueue_timeout_seconds": 0.2,
+    "writer_queue_capacity": 4096
+  },
+  "schema_version": 1
+}

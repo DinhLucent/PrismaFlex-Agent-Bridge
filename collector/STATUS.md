@@ -1,6 +1,6 @@
 # PrismaFlex Collector — Live Status & Sync Ledger
 
-> **Cập nhật gần nhất**: 2026-10-24 01:50:00 (GMT+7)  
+> **Cập nhật gần nhất**: 2026-10-24 02:07:00 (GMT+7)  
 > **Trạm giám sát**: ICU-B Bệnh viện Chợ Rẫy (`192.168.5.1`)  
 > **Phân hệ**: PrismaFlex Collector Service v2  
 
@@ -54,6 +54,7 @@ Dải IP mạng LAN nội bộ: `192.168.5.0/24` (Card Realtek 2.5GbE `192.168.5
 
 | Ngày / Giờ | Bên khởi tạo | Mã tham chiếu | Hành động chính | Kết quả |
 |---|---|---|---|---|
+| **2026-10-24 02:07** | **Target Agent** | `REQ-COL-0002` | Trích xuất đo xa, trạng thái socket và active config của Collector | Hoàn tất thu thập, 4 máy Online (PF_003, 005, 006, 011), 0 tồn đọng OIE |
 | **2026-10-24 01:50** | **Dev Agent** | `REQ-COL-0001` | Khởi tạo Dedicated Collector Workspace trên Bridge | Thiết lập xong workspace & chỉ thị ban đầu |
 | **2026-10-23 10:45** | **Target Agent** | `REP-SYS-1023` | Rà soát toàn thể hệ thống, socket 3001/3002 và các ca lọc | 4 máy lọc online, 2 máy treo state cần hướng dẫn |
 | **2026-10-15 13:45** | **Target Agent** | `REP-COL-1015` | Trích xuất metrics Collector status & DB WAL | Ghi nhận > 3.4 triệu gói tin, Uptime 27 ngày |

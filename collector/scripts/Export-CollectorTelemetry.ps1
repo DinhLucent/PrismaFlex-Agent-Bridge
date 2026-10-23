@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     Tự động thu thập và đóng gói dữ liệu đo xa, trạng thái vận hành của Collector trên máy ICU-B.
 .DESCRIPTION
@@ -28,10 +28,17 @@ Write-Host "==========================================================" -Foregro
 # 1. Kiểm tra trạng thái Windows Service
 $svc = Get-Service -Name "PrismaFlexCollectorService" -ErrorAction SilentlyContinue
 $svcStatus = if ($svc) { $svc.Status } else { "NOT_FOUND" }
+$svcCim = Get-CimInstance Win32_Service -Filter "Name='PrismaFlexCollectorService'" -ErrorAction SilentlyContinue
+$mainPid = if ($svcCim) { $svcCim.ProcessId } else { $null }
+
 $proc = Get-Process -Name "PrismaFlexCollectorService" -ErrorAction SilentlyContinue
-$procId = if ($proc) { $proc.Id } else { "N/A" }
-$procMemMb = if ($proc) { [math]::Round($proc.WorkingSet64 / 1MB, 2) } else { 0 }
-$procStart = if ($proc) { $proc.StartTime.ToString("yyyy-MM-dd HH:mm:ss") } else { "N/A" }
+$procId = if ($mainPid) { "$mainPid" } elseif ($proc) { ($proc | Select-Object -First 1).Id } else { "N/A" }
+$procMemMb = if ($proc) { [math]::Round(($proc | Measure-Object -Property WorkingSet64 -Sum).Sum / 1MB, 2) } else { 0 }
+$procStart = if ($mainPid -and ($proc | Where-Object { $_.Id -eq $mainPid })) {
+    ($proc | Where-Object { $_.Id -eq $mainPid }).StartTime.ToString("yyyy-MM-dd HH:mm:ss")
+} elseif ($proc) {
+    ($proc | Sort-Object StartTime)[0].StartTime.ToString("yyyy-MM-dd HH:mm:ss")
+} else { "N/A" }
 
 Write-Host "`n1. Trạng thái Dịch vụ:" -ForegroundColor Yellow
 Write-Host "   - Service: $svcStatus | PID: $procId | RAM: $procMemMb MB | Khởi động lúc: $procStart"
@@ -81,12 +88,13 @@ if (Test-Path $readyDir) {
 Write-Host "4. Hàng đợi Outbox ready: $readyCount files | File cũ nhất: $oldestFileAge" -ForegroundColor Yellow
 
 # 5. Socket Connections thực tế trên OS
-$tcp3001 = Get-NetTCPConnection -LocalPort 3001 -ErrorAction SilentlyContinue
-$tcp3002 = Get-NetTCPConnection -LocalPort 3002 -ErrorAction SilentlyContinue
-$listen3001 = ($tcp3001 | Where-Object { $_.State -eq "Listen" }).Count -gt 0
-$listen3002 = ($tcp3002 | Where-Object { $_.State -eq "Listen" }).Count -gt 0
-$est3001 = ($tcp3001 | Where-Object { $_.State -eq "Established" }).Count
-$est3002 = ($tcp3002 | Where-Object { $_.State -eq "Established" }).Count
+$allTcp = Get-NetTCPConnection -ErrorAction SilentlyContinue
+$tcp3001 = $allTcp | Where-Object { $_.LocalPort -eq 3001 -or $_.RemotePort -eq 3001 }
+$tcp3002 = $allTcp | Where-Object { $_.LocalPort -eq 3002 -or $_.RemotePort -eq 3002 }
+$listen3001 = @($tcp3001 | Where-Object { $_.State -eq "Listen" }).Count -gt 0
+$listen3002 = @($tcp3002 | Where-Object { $_.State -eq "Listen" }).Count -gt 0
+$est3001 = @($tcp3001 | Where-Object { $_.State -eq "Established" }).Count
+$est3002 = @($tcp3002 | Where-Object { $_.State -eq "Established" }).Count
 
 Write-Host "5. Sockets:" -ForegroundColor Yellow
 Write-Host "   - Port 3001 (User): Listen=$listen3001 | Established=$est3001 connections"
@@ -168,9 +176,9 @@ $mdContent = @"
 # Báo cáo Dữ liệu Đo xa & Hiện trạng Hoạt động Collector (ICU-B)
 
 - **Thời điểm trích xuất**: $timestampStr (GMT+7)
-- **Thiết bị thực hiện**: Máy chủ trạm ICU-B Chợ Rẫy (`192.168.5.1`)
-- **Tình trạng Dịch vụ Windows**: `$svcStatus` (PID: `$procId`, RAM: `${procMemMb} MB`)
-- **Thời gian khởi động**: `$procStart` (Uptime: `$uptimeDays` ngày)
+- **Thiết bị thực hiện**: Máy chủ trạm ICU-B Chợ Rẫy (``192.168.5.1``)
+- **Tình trạng Dịch vụ Windows**: ``$svcStatus`` (PID: ``$procId``, RAM: ``${procMemMb} MB``)
+- **Thời gian khởi động**: ``$procStart`` (Uptime: ``$uptimeDays`` ngày)
 
 ---
 
@@ -189,8 +197,8 @@ $mdContent = @"
 
 ## 2. Kết nối Mạng & Socket Thực tế
 
-- **Cổng User 3001**: Lắng nghe: `$listen3001` | Kết nối Established: `$est3001`
-- **Cổng Service 3002**: Lắng nghe: `$listen3002` | Kết nối Established: `$est3002`
+- **Cổng User 3001**: Lắng nghe: ``$listen3001`` | Kết nối Established: ``$est3001``
+- **Cổng Service 3002**: Lắng nghe: ``$listen3002`` | Kết nối Established: ``$est3002``
 
 ### Ma trận Ping 11 Máy lọc PrismaFlex
 | Máy lọc | Địa chỉ IP | Kết quả Ping |
@@ -209,14 +217,14 @@ $devStatusLines
 
 ## 4. Trích đoạn Nhật ký Hệ thống Gần nhất (Logs Tail)
 
-```text
+``````text
 $logExcerpt
-```
+``````
 
 ---
 
 ## 5. Kết luận cho Dev Agent
-- Dữ liệu cấu hình đã được copy vào: `collector/configs/collector_service.active.json`
+- Dữ liệu cấu hình đã được copy vào: ``collector/configs/collector_service.active.json``
 - Mọi thông số thu thập được tuân thủ nguyên tắc không chứa thông tin cá nhân bệnh nhân.
 "@
 
