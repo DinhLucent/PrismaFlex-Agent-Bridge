@@ -1,0 +1,28 @@
+# Nghiệm thu ICU-B — PrismaFlex 1.2.4
+
+- Thời điểm, người thực hiện, cửa sổ bảo trì: 2026-10-24 02:30:00 - 03:20:00 GMT+7 (2026-10-23 19:30 - 20:20 UTC); AI Maintenance Agent; Cửa sổ bảo trì kích hoạt với `-MaintenanceConfirmed`. Gián đoạn Web/API: ~3 phút 20 giây (03:11:35 - 03:14:55), sau đó tự động rollback an toàn.
+- Version/phase/revision trước và sau: Trước: 1.2.1 / READY / d4b2a8f91c30. Sau: 1.2.1 / READY (update.json phase: `ROLLED_BACK`, migration_started: false) / d4b2a8f91c30.
+- ZIP bytes/SHA-256, verifier 1.2.1 và signed release sau update: 151,053,674 bytes; SHA-256: `9765ae00db2b2ce69bbaacbeab09b183de62e55dc770bc39f46036c3ef401751` (khớp chính xác ARTIFACT.json); Verifier 1.2.1 xác thực release 1.2.4 candidate PASS (status: valid, platform: windows-x64, 1652 files).
+- Preflight / postflight (đường dẫn báo cáo cục bộ): Preflight: `C:\Users\Administrator\AppData\Local\Temp\prismaflex-124-preflight-pass.json` (PASS 17/17 checks); Postflight: CHƯA CHẠY do dừng sau khi updater tự động rollback.
+- Số treatment IN_PROGRESS trước/sau; cùng ID/start time/journal: PASS: Toàn bộ 6/6 ca đang chạy giữ nguyên 100% ID, start time, outcome `IN_PROGRESS` và mốc journal cuối:
+  - PF_003: `499394dc-c1e6-507c-a354-36be4d9c2769` | Start: 2026-10-22 08:14:49+07 | Rows: 49 | Last row: OC_07 / 2026-10-24 01:14:55+07
+  - PF_005: `d12f43ed-7625-561b-a982-01e5da425862` | Start: 2026-10-23 16:24:15+07 | Rows: 13 | Last row: OC_03 / 2026-10-24 01:24:16+07
+  - PF_006: `2d2800f6-3e20-5e54-8edb-5957127ed5d8` | Start: 2026-10-21 10:49:57+07 | Rows: 72 | Last row: OC_10 / 2026-10-24 00:50:00+07
+  - PF_009: `860a807c-c374-5d52-9025-279ffc957e11` | Start: 2026-10-16 05:30:19+07 | Rows: 180 | Last row: OC_34 / 2026-10-22 18:00:20+07
+  - PF_010: `be6a377c-af96-5dc1-b871-f943fba03fd4` | Start: 2026-10-21 23:33:52+07 | Rows: 18 | Last row: OC_02 / 2026-10-22 16:45:43+07
+  - PF_011: `79bf527b-14a9-5c7c-aa21-069e4a3de5e0` | Start: 2026-10-22 23:46:59+07 | Rows: 28 | Last row: OC_02 / 2026-10-24 00:47:05+07
+  - Baseline snapshot lưu tại: `C:\Users\Administrator\AppData\Local\Temp\treatment-snapshot-before-124.json`.
+- Mirth/OIE queue và delivery_id: CHƯA KIỂM TRA theo yêu cầu chủ máy (không coi là PASS).
+- Raw/receipt mới và journal sau update; khoảng trống dữ liệu nếu có: 394,101 completed receipts, 0 pending. Do bỏ qua bước Mirth/OIE theo yêu cầu chủ máy, các gói trong khoảng thời gian Web/API gián đoạn không cam kết gửi bù; ghi nhận khả năng có khoảng trống dữ liệu trong khoảng 03:11 - 03:14.
+- Backup ID, database.dump khác rỗng, backup.json và thử restore tách biệt: Backup ID `a4e6fda5fd1c4bec94045b36533bb749` tại `C:\PrismaFlex\shared\backups\a4e6fda5fd1c4bec94045b36533bb749`; `database.dump` (33,372,930 bytes, khác rỗng); `backup.json` hoàn chỉnh với SHA-256 của toàn bộ dữ liệu.
+- API/Web/Analyzer, login LAN, WebSocket, logo và verify-release sau mở trang: 1.2.1 hiện tại: API 8000 `/internal/ready` READY (version: 1.2.1, schema: d4b2a8f91c30); Web 3000 `/login` HTTP 200; Analyzer 15555 `/health` OK.
+- SCM và WinSW XML cho WMI, PostgreSQL, API; reboot sau sửa: PASS/FAIL/CHƯA CHẠY: CHƯA CHẠY (Bản 1.2.4 chưa hoàn tất nên không chạy Apply-Startup-Dependencies.ps1; cấu hình service 1.2.1 được giữ nguyên).
+- Gateway 3001/3002, Collector reconnect, firewall/interface: PrismaFlexCollectorService (PID 6932) duy trì kết nối TCP Established tới các cổng 3001/3002 trên 192.168.5.23, 192.168.5.25, 192.168.5.26, 192.168.5.31. NIC 192.168.5.1/24 giữ nguyên không thêm default gateway giả định.
+- Giờ card/chart/tooltip/Machine Time và giờ nguồn thiết bị: Hệ thống chạy trên múi giờ Việt Nam GMT+7 (+07:00).
+- Journal không còn Analysis; Analyzer độc lập: CHƯA THAY ĐỔI (đang ở 1.2.1).
+- Lỗi, recovery, chứng cứ đã khử định danh:
+  - Lỗi: `Wait-PFReady` trong `Update-Release.ps1` vượt quá hạn mức 120s (`Live service readiness deadline exceeded`).
+  - Nguyên nhân: Cả `prismaflex-api` và `prismaflex-web` cùng chạy `verify_own_manifest` khi khởi động lần đầu trên 1.2.4, cạnh tranh I/O quét toàn bộ 1.652 file ngay sau khi vừa copy và backup 2.5GB `shared\var`, khiến thời gian khởi động vượt quá 120 giây.
+  - Recovery: Do `migration_started = false`, cơ chế an toàn tự động kích hoạt rollback, phục hồi cấu hình và dịch vụ 1.2.1 an toàn về trạng thái READY, `update.json` ghi nhận `ROLLED_BACK`.
+- Rủi ro còn lại / mục chưa chạy: Chưa nâng cấp lên 1.2.4. Theo quy định tại mục 5 `START-HERE.md`: "Nếu updater báo ROLLED_BACK, xác minh 1.2.1 READY/login/ingest rồi báo thất bại. Không chạy updater lần hai chồng lên lần lỗi, không sửa update.json để vượt chặn." Giữ nguyên release cũ và chờ kế hoạch bảo trì tiếp theo.
+- Kết luận: FAIL (Cập nhật 1.2.4 thất bại do timeout readiness check; Rollback về 1.2.1 thành công 100%, bảo toàn an toàn dữ liệu và các ca điều trị).
