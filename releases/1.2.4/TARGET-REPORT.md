@@ -5,8 +5,8 @@
 - ZIP bytes/SHA-256, verifier 1.2.1 và signed release sau update:
 - Preflight / postflight (đường dẫn báo cáo cục bộ):
 - Số treatment IN_PROGRESS trước/sau; cùng ID/start time/journal: PASS/FAIL/CHƯA CHẠY:
-- Collector/OIE một instance; queue bền vững, delivery_id giữ nguyên: PASS/FAIL/CHƯA CHẠY:
-- Backlog/receipt trước và sau, dữ liệu thời gian gián đoạn được gửi bù: PASS/FAIL/CHƯA CHẠY:
+- Mirth/OIE queue và delivery_id: CHƯA KIỂM TRA theo yêu cầu chủ máy (không coi là PASS):
+- Raw/receipt mới và journal sau update; khoảng trống dữ liệu nếu có:
 - Backup ID, database.dump khác rỗng, backup.json và thử restore tách biệt:
 - API/Web/Analyzer, login LAN, WebSocket, logo và verify-release sau mở trang:
 - SCM và WinSW XML cho WMI, PostgreSQL, API; reboot sau sửa: PASS/FAIL/CHƯA CHẠY:

@@ -101,7 +101,7 @@ $report = [ordered]@{
     checked_at_utc=[DateTime]::UtcNow.ToString('o'); phase=$Phase; target_version='1.2.4'
     status=$(if (@($checks | Where-Object result -eq 'FAIL').Count) {'BLOCKED'} else {'PASS'})
     checks=@($checks.ToArray())
-    manual_checks=@('Confirm maintenance window and OIE retry/backlog handling','Budget disk for actual DB and runtime backup','Login and inspect telemetry/chart/journal','Keep diagnostic details and patient data off public GitHub')
+    manual_checks=@('Confirm maintenance window and snapshot active treatment IDs; Mirth is out of scope','Budget disk for actual DB and runtime backup','Login and inspect telemetry/chart/journal','Keep diagnostic details and patient data off public GitHub')
 }
 $json = $report | ConvertTo-Json -Depth 8
 if ($ReportPath) {
