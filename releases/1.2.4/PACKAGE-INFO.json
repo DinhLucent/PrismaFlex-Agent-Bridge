@@ -1,0 +1,20 @@
+{
+  "version": "1.2.4",
+  "platform": "windows-x64",
+  "test_only": false,
+  "status": "Signed owner media. Confirm site, license and target-machine acceptance before installation.",
+  "site": {
+    "schema": 2,
+    "site_id": "prismaflex",
+    "analyzer_enabled": true
+  },
+  "db_revision": "d4b2a8f91c30",
+  "supported_from_revisions": [
+    "d4b2a8f91c30"
+  ],
+  "verifier_sha256": "44f7ab6776d6acf6adc57ebb01b3a9502073e733a023c49bbb7a4a2e1dd2714c",
+  "manifest_sha256": "56ffd70b40dc666ec206d3d09a384e75050e656af0767192514c3c720d328e9f",
+  "packaged_at": "2026-10-23T18:28:01.136711+00:00",
+  "postgresql_bundled": false,
+  "collector_oie_bundled": false
+}
