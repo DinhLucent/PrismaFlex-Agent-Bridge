@@ -1,2 +1,12 @@
 # Release binaries are distributed as GitHub Release assets.
 /installers/
+
+# CodeGraph & Agent local indexes
+.codegraph/
+
+# Python & temporary test artifacts
+__pycache__/
+*.py[cod]
+*.db-shm
+*.db-wal
+reports/audit-20260917/unit-temp*/

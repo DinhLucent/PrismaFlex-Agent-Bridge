@@ -1,0 +1,100 @@
+{
+  "department": "Khoa Hồi Sức Tích Cực B (ICU-B) - Bệnh viện Chợ Rẫy",
+  "gateway_interface": "Realtek Gaming 2.5GbE Family Controller",
+  "gateway_host_ip": "192.168.5.1",
+  "subnet_mask": "255.255.255.0",
+  "ports": {
+    "user_port": 3001,
+    "service_port": 3002
+  },
+  "devices": [
+    {
+      "id": 1,
+      "device_code": "PF_001",
+      "ip_address": "192.168.5.21",
+      "bed": "Bed 01",
+      "status": "RESERVE",
+      "enabled": false
+    },
+    {
+      "id": 2,
+      "device_code": "PF_002",
+      "ip_address": "192.168.5.22",
+      "bed": "Bed 02",
+      "status": "RESERVE",
+      "enabled": false
+    },
+    {
+      "id": 3,
+      "device_code": "PF_003",
+      "ip_address": "192.168.5.23",
+      "bed": "Bed 03",
+      "status": "ACTIVE_PRODUCTION",
+      "enabled": true
+    },
+    {
+      "id": 4,
+      "device_code": "PF_004",
+      "ip_address": "192.168.5.24",
+      "bed": "Bed 04",
+      "status": "STANDBY",
+      "enabled": true
+    },
+    {
+      "id": 5,
+      "device_code": "PF_005",
+      "ip_address": "192.168.5.25",
+      "bed": "Bed 05",
+      "status": "ACTIVE_PRODUCTION",
+      "enabled": true
+    },
+    {
+      "id": 6,
+      "device_code": "PF_006",
+      "ip_address": "192.168.5.26",
+      "bed": "Bed 06",
+      "status": "ACTIVE_PRODUCTION",
+      "enabled": true
+    },
+    {
+      "id": 7,
+      "device_code": "PF_007",
+      "ip_address": "192.168.5.27",
+      "bed": "Bed 07",
+      "status": "STANDBY",
+      "enabled": true
+    },
+    {
+      "id": 8,
+      "device_code": "PF_008",
+      "ip_address": "192.168.5.28",
+      "bed": "Bed 08",
+      "status": "STANDBY",
+      "enabled": true
+    },
+    {
+      "id": 9,
+      "device_code": "PF_009",
+      "ip_address": "192.168.5.29",
+      "bed": "Bed 09",
+      "status": "ACTIVE_PRODUCTION",
+      "enabled": true
+    },
+    {
+      "id": 10,
+      "device_code": "PF_010",
+      "ip_address": "192.168.5.30",
+      "bed": "Bed 10",
+      "status": "ACTIVE_PRODUCTION",
+      "enabled": true
+    },
+    {
+      "id": 11,
+      "device_code": "PF_011",
+      "ip_address": "192.168.5.31",
+      "bed": "Bed 11",
+      "status": "ACTIVE_PRODUCTION",
+      "enabled": true
+    }
+  ]
+}
