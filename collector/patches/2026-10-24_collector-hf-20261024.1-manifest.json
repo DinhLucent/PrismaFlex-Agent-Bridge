@@ -1,0 +1,22 @@
+{
+  "build_id": "collector-hf-20261024.1",
+  "product_version": "3.0.2",
+  "source_commit": "3c7811ada5f95b4978ce04c8f56a26242fc65c67",
+  "archive": {
+    "name": "collector-hf-20261024.1.zip",
+    "bytes": 63547453,
+    "sha256": "EC0F6A308DB3B547F1351806CDCC2B04695D21C6FBAF389111E8567FC7863AD1"
+  },
+  "files": [
+    {
+      "name": "PrismaFlexCollectorService.exe",
+      "bytes": 14166071,
+      "sha256": "2FAA4284FC5A51E32ED61CFE339D159730449F27D664FF00FB582BBACE8FEFC4"
+    },
+    {
+      "name": "PrismaFlexDataCollector.exe",
+      "bytes": 49880386,
+      "sha256": "D58F301FFBDD28DCD5D231C6EEAF2318114B6231439B1CD0C2E726B66AB92AAC"
+    }
+  ]
+}

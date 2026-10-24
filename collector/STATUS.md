@@ -1,5 +1,11 @@
 # PrismaFlex Collector — Live Status & Sync Ledger
 
+> **Lưu ý 2026-10-24**: Các bảng bên dưới là snapshot lịch sử ở các thời điểm
+> khác nhau, không còn là trạng thái live đã xác minh. Đặc biệt các khẳng định
+> về uptime, số packet và ca đang thu cần được đo lại. Theo dõi
+> [yêu cầu chẩn đoán/hotfix](requests/2026-10-24_collector-hotfix-stage-and-verify.md)
+> và báo cáo mới của Target Agent trước khi kết luận hệ thống đã phục hồi.
+
 > **Cập nhật gần nhất**: 2026-10-24 02:07:00 (GMT+7)  
 > **Trạm giám sát**: ICU-B Bệnh viện Chợ Rẫy (`192.168.5.1`)  
 > **Phân hệ**: PrismaFlex Collector Service v2  
