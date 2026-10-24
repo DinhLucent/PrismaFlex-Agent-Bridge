@@ -72,6 +72,11 @@ chứng minh packet Service hợp lệ đi vào Collector.
    hoạch bảo toàn luồng dữ liệu đã được chấp thuận tại hiện trường. Nếu chưa
    có kế hoạch/cửa sổ, **chỉ staging**, ghi `CUTOVER_DEFERRED` và lý do;
    tiếp tục theo dõi và báo cáo bằng chứng, không tự restart/force-kill.
+4. Trước Bước C, hoàn thành và đính kèm báo cáo **PASS** cho packaged soak 72
+   giờ trong môi trường thử cô lập, reboot/logout/forced-kill và replay, field
+   capacity preflight, cùng rollback rehearsal. So sánh packet identity/hash,
+   sequence, outbox delivery và giới hạn tài nguyên; nếu bất kỳ gate nào
+   `FAIL` hoặc `NOT_EXECUTED`, tiếp tục staging/chẩn đoán, **chưa cutover**.
 
 ## 4. Bước C — cutover có kiểm soát
 
@@ -113,6 +118,7 @@ NOT_EXECUTED`, sự cố và quyết định tiếp tục/hoãn/rollback. Cập 
 phản hồi. Không gửi tên/ID bệnh nhân, license, config materialized, raw packet
 hay dump nguyên trạng lên GitHub.
 
-72 giờ soak đóng gói, reboot/logout/forced-kill, preflight tải bệnh viện,
-rollback rehearsal và canary 7 ngày là các gate riêng; mặc định
-`NOT_EXECUTED`. Chỉ sau khi có report tương ứng mới đề xuất phát hành rộng.
+72 giờ soak đóng gói, reboot/logout/forced-kill, preflight tải bệnh viện và
+rollback rehearsal là gate **trước** cutover; hiện đều `NOT_EXECUTED`.
+Canary 7 ngày là gate **sau** cutover, trước khi đề xuất phát hành rộng.
+Chỉ đánh dấu PASS sau khi có báo cáo tương ứng.

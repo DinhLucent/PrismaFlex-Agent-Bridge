@@ -13,7 +13,7 @@ Gói phát hành và SHA-256: [hướng dẫn hotfix](../patches/2026-10-24_coll
 | HF-05 | P0 | Nguy cơ stop lỗi rồi mở thêm tiến trình ghi cùng DB | Giữ mutex nếu shutdown lỗi | Test khóa không được nhả sớm | Thử rollback với process bị treo trong phòng thử nghiệm |
 | OPS-01 | P0 | Chưa biết mức tải/điểm nghẽn máy ICU-B | Script chỉ đọc 7 mẫu/60 giây, per-port/status/process/socket/dung lượng | Script smoke test 2 mẫu trên file giả lập | Agent hiện trường gửi baseline và post-cutover đã khử định danh |
 | OPS-02 | P0 | Nâng cấp dịch vụ khi đang có ca lọc | Backup, kiểm soát một instance, tiêu chí dừng/rollback trong request | Chưa chạy tại hiện trường | Cửa sổ bảo trì hoặc kế hoạch duy trì dữ liệu được quản trị hiện trường chấp thuận |
-| GATE-01 | P1 | Chưa thể hứa hẹn zero loss với buffer hữu hạn | Giữ ACK sau commit; kiểm thử packet duy nhất và hash | 18.009/18.009 giả lập trong 23 giây; quick_check=ok | Soak 72 giờ, reboot/logout/crash, field load, đối chiếu sequence 7 ngày: `NOT_EXECUTED` |
+| GATE-01 | P0 | Chưa thể hứa hẹn zero loss với buffer hữu hạn | Giữ ACK sau commit; kiểm thử packet duy nhất và hash | 18.009/18.009 giả lập trong 23 giây; quick_check=ok | **Trước cutover**: soak 72 giờ, reboot/logout/crash, field load, rollback rehearsal: `NOT_EXECUTED`. Sau cutover: canary 7 ngày: `NOT_EXECUTED` |
 
 Ảnh và báo cáo ở thời điểm khác nhau không thể chứng minh cùng một nguyên nhân.
 `PageIn`, LiveKernelEvent và GIL cần log/dump có thời điểm khớp; `Connected`
