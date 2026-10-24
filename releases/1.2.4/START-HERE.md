@@ -1,5 +1,7 @@
 # ICU-B — cập nhật PrismaFlex 1.2.1 lên 1.2.4
 
+**Cập nhật trạng thái 24/10:** lần thử tại ICU-B đã hết hạn readiness và rollback về 1.2.1. Máy đã thử cập nhật cần làm [bước thu bằng chứng startup](STARTUP-FAILURE-FOLLOWUP.md) trước; không chạy lại updater theo các bước dưới đây trong khi chưa xác định nguyên nhân. Hướng dẫn dưới được giữ làm hồ sơ quy trình đã sử dụng.
+
 Đây là hướng dẫn cho **máy ICU-B tại `C:\PrismaFlex`**, cài theo management protocol 2. Đọc [prompt cho agent](PROMPT-ICU-B-AGENT.md), [ghi chú phát hành](RELEASE-NOTES.md) và [mẫu nghiệm thu](TARGET-REPORT.md) trước khi làm. [Gói Windows x64 đã ký](https://github.com/DinhLucent/PrismaFlex-Agent-Bridge/releases/tag/v1.2.4-pilot) có SHA-256 trong `ARTIFACT.json`. Không dùng source ZIP tự sinh của GitHub.
 
 **Điều chỉnh theo yêu cầu chủ máy:** bỏ bước làm việc với Mirth/OIE. Không mở giao diện Mirth, sửa channel, kiểm hàng đợi hoặc chờ chứng minh `delivery_id`; việc đó không chặn cập nhật. Bản hướng dẫn trên GitHub sau `git pull --ff-only` thay thế câu chữ cũ nằm trong ZIP đã ký; **ZIP và SHA-256 không đổi**. Treatment đang `IN_PROGRESS` phải giữ cùng ID, thời điểm bắt đầu và ghi journal tiếp sau update. Vì bỏ kiểm tra Mirth, không thể bảo đảm mọi gói phát sinh trong lúc API dừng đều được gửi bù; ghi rõ khoảng trống nếu thấy trong nghiệm thu. Không dừng máy lọc hoặc tạo Collector thứ hai để thử.

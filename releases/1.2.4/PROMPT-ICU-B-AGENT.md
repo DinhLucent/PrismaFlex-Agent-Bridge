@@ -1,5 +1,7 @@
 # Prompt gửi agent tại máy ICU-B
 
+**Sau lần rollback ngày 24/10:** dùng [prompt thu bằng chứng startup chỉ đọc](STARTUP-FAILURE-FOLLOWUP.md#prompt-gửi-agent-icu-b) trước. Không chạy lại updater theo prompt triển khai ban đầu bên dưới; Mirth vẫn được bỏ qua.
+
 Bạn đang thao tác trên máy ICU-B, WebApp đang chạy PrismaFlex 1.2.1 tại `C:\PrismaFlex`. Hãy cập nhật lên bản 1.2.4 đã ký theo đúng `releases/1.2.4/START-HERE.md` trong repo `D:\PrismaFlexProject\PrismaFlex-Agent-Bridge` (hoặc đường dẫn clone thực tế). Trước hết `git pull --ff-only`, đọc `ARTIFACT.json`, `RELEASE-NOTES.md`, hướng dẫn và mẫu báo cáo. **Không dùng 1.2.2/1.2.3 cho yêu cầu này.** Không cài mới hay đổi license/site/DB/network khi nâng cấp.
 
 **Bỏ qua Mirth/OIE theo yêu cầu chủ máy.** Không mở giao diện, sửa channel, kiểm queue hoặc chờ chứng minh `delivery_id`; không để việc Mirth kéo dài chặn bản cập nhật WebApp. Giữ nguyên service/cấu hình Mirth. Trước update, ghi cục bộ các treatment `IN_PROGRESS` cùng ID, start time và mốc raw/receipt/journal để so sau cập nhật. Tránh thời điểm đổi bệnh nhân hoặc END/reset. Không tự dừng máy lọc, giả lập packet trên thiết bị thật, tách ca hay chỉnh trạng thái treatment. Vì không kiểm Mirth, không cam kết không mất gói trong thời gian API dừng; ghi rủi ro này là **CHƯA KIỂM TRA**.
