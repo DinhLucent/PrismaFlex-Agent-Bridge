@@ -1,5 +1,6 @@
 # Release binaries are distributed as GitHub Release assets.
 /installers/
+/.build/
 
 # CodeGraph & Agent local indexes
 .codegraph/
